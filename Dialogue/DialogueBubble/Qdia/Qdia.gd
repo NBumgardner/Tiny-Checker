@@ -26,18 +26,20 @@ func _init(s:Vector2,textSize:float,boxPosition:Vector2,chacterPosition:Vector2,
 	cs.Cur = Vector2(1,1)
 
 func SetData(d:QdiaData):
-	Data = d
-	Cha.texture = d.texture
-	text.Text.Data.Text = d.text
-	text.Text.HideAllText()
-	text.Text.Play()
+	if text!=null:
+		Data = d
+		Cha.texture = d.texture
+		text.Text.Data.Text = d.text
+		text.Text.HideAllText()
+		text.Text.Play()
+		ChaBounce()
 
 func ChaBounce():
 	cs.AddVocility(Vector2(-0.5,1))
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	Cha = Sprite2D.new()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -61,5 +63,3 @@ func _process(delta: float) -> void:
 			cs.Update(delta)
 			Cha.scale = cs.Data()
 	
-	if Input.is_action_just_pressed("MouseL") and  UFM.PointInRect(MouseManager.MousePosition()-UFN.N2GlobalPosition(text),Rect2(-Size/2,Size)):
-		text.Text.Skip()

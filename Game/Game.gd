@@ -6,7 +6,7 @@ extends Node2D
 @export var MainMap:Map
 @export var MatchShower:Shower
 @export var MapShower:Shower
-
+@export var E:GameIsEnd
 
 
 
@@ -29,17 +29,20 @@ func StartMatch(d:MatchData):
 func MatchEnd(m:Match):
 	if m.Data.BoardID != 1:
 		MainMap.MoneyCount.AddMonry(m.MatchMoney+60)
+	else:
+		SoundManager.PlaySound("Transform")
 	MainMap.ActiveMap()
 	MapShower.ShowInst()
 	MatchShower.Hide()
 	MainMap.StartSelect()
 	
 func RestartGame():
-	print("Game ReStart")
-	
+	MainMap.InitMap()
+	GameStart()
 	
 func EndGame():
-	print("Game is End")
+	E.InitDia()
+	
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -48,10 +51,15 @@ func _ready() -> void:
 	test()
 	
 
+func GameStart():
+	StartMatch(Data.MatchList[0])
+	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 func test():
+	pass
 	#StartMapAt(0)
 	#MatchEnd(null)
-	StartMatch(Data.MatchList[0])
+	#StartMatch(Data.MatchList[0])

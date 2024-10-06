@@ -1,261 +1,268 @@
-[gd_scene load_steps=40 format=3 uid="uid://bdut8jp3ecntc"]
+[gd_scene load_steps=41 format=3 uid="uid://bdut8jp3ecntc"]
 
 [ext_resource type="Script" path="res://Sound/SoundManager.gd" id="1_54emm"]
 [ext_resource type="Script" path="res://Sound/SoundData.gd" id="2_sc16m"]
 
-[sub_resource type="Resource" id="Resource_q775u"]
+[sub_resource type="Resource" id="Resource_cgjd8"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/BHover/1.wav", "res://Sound/SoundData/BHover/2.wav", "res://Sound/SoundData/BHover/3.wav", "res://Sound/SoundData/BHover/4.wav", "res://Sound/SoundData/BHover/5.wav", "res://Sound/SoundData/BHover/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_8657b"]
+[sub_resource type="Resource" id="Resource_cq205"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/BShow/1.wav", "res://Sound/SoundData/BShow/2.wav", "res://Sound/SoundData/BShow/3.wav", "res://Sound/SoundData/BShow/4.wav", "res://Sound/SoundData/BShow/5.wav", "res://Sound/SoundData/BShow/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_fw0fq"]
+[sub_resource type="Resource" id="Resource_d4afy"]
 script = ExtResource("2_sc16m")
 Volume = -10
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Check/1.wav", "res://Sound/SoundData/Check/2.wav", "res://Sound/SoundData/Check/3.wav", "res://Sound/SoundData/Check/4.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_fah4i"]
+[sub_resource type="Resource" id="Resource_s7asg"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/CloseBag/1.wav", "res://Sound/SoundData/CloseBag/2.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_2bd8w"]
+[sub_resource type="Resource" id="Resource_mhafp"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Combine/1.wav", "res://Sound/SoundData/Combine/2.wav", "res://Sound/SoundData/Combine/3.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_q1n62"]
+[sub_resource type="Resource" id="Resource_7c1tc"]
 script = ExtResource("2_sc16m")
 Volume = -10
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Counter/1.wav", "res://Sound/SoundData/Counter/2.wav", "res://Sound/SoundData/Counter/3.wav", "res://Sound/SoundData/Counter/4.wav", "res://Sound/SoundData/Counter/5.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_vntod"]
+[sub_resource type="Resource" id="Resource_144wd"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Counter2/1.wav", "res://Sound/SoundData/Counter2/2.wav", "res://Sound/SoundData/Counter2/3.wav", "res://Sound/SoundData/Counter2/4.wav", "res://Sound/SoundData/Counter2/5.wav", "res://Sound/SoundData/Counter2/6.wav", "res://Sound/SoundData/Counter2/7.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_uuoea"]
+[sub_resource type="Resource" id="Resource_b6fgn"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Death/1.wav", "res://Sound/SoundData/Death/2.wav", "res://Sound/SoundData/Death/3.wav", "res://Sound/SoundData/Death/4.wav", "res://Sound/SoundData/Death/5.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_bxnnx"]
+[sub_resource type="Resource" id="Resource_msequ"]
 script = ExtResource("2_sc16m")
 Volume = -7
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Drop/1.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_yqugn"]
+[sub_resource type="Resource" id="Resource_8wb2e"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Fire/1.wav", "res://Sound/SoundData/Fire/2.wav", "res://Sound/SoundData/Fire/3.wav", "res://Sound/SoundData/Fire/4.wav", "res://Sound/SoundData/Fire/5.wav", "res://Sound/SoundData/Fire/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_c3j61"]
+[sub_resource type="Resource" id="Resource_n1r13"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/GetPawn/1.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_vsyjo"]
+[sub_resource type="Resource" id="Resource_6l4b1"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Gold/1.wav", "res://Sound/SoundData/Gold/2.wav", "res://Sound/SoundData/Gold/3.wav", "res://Sound/SoundData/Gold/4.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_0kipf"]
+[sub_resource type="Resource" id="Resource_w8ok0"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/GoldBreak/1.wav", "res://Sound/SoundData/GoldBreak/2.wav", "res://Sound/SoundData/GoldBreak/3.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_0poo3"]
+[sub_resource type="Resource" id="Resource_m08bj"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Heal/1.wav", "res://Sound/SoundData/Heal/2.wav", "res://Sound/SoundData/Heal/3.wav", "res://Sound/SoundData/Heal/4.wav", "res://Sound/SoundData/Heal/5.wav", "res://Sound/SoundData/Heal/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_hksxp"]
+[sub_resource type="Resource" id="Resource_owtxb"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Hit/1.wav", "res://Sound/SoundData/Hit/2.wav", "res://Sound/SoundData/Hit/3.wav", "res://Sound/SoundData/Hit/4.wav", "res://Sound/SoundData/Hit/5.wav", "res://Sound/SoundData/Hit/6.wav", "res://Sound/SoundData/Hit/7.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_58jx3"]
+[sub_resource type="Resource" id="Resource_f41n1"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Ice/1.wav", "res://Sound/SoundData/Ice/2.wav", "res://Sound/SoundData/Ice/3.wav", "res://Sound/SoundData/Ice/4.wav", "res://Sound/SoundData/Ice/5.wav", "res://Sound/SoundData/Ice/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_7oytu"]
+[sub_resource type="Resource" id="Resource_r8bw7"]
 script = ExtResource("2_sc16m")
 Volume = -5
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/IceBreak/1.wav", "res://Sound/SoundData/IceBreak/2.wav", "res://Sound/SoundData/IceBreak/3.wav", "res://Sound/SoundData/IceBreak/4.wav", "res://Sound/SoundData/IceBreak/5.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_lyvh5"]
+[sub_resource type="Resource" id="Resource_kxj2t"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/LosePoint/1.wav", "res://Sound/SoundData/LosePoint/2.wav", "res://Sound/SoundData/LosePoint/3.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_ievpg"]
+[sub_resource type="Resource" id="Resource_3y2bf"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/MHover/1.wav", "res://Sound/SoundData/MHover/2.wav", "res://Sound/SoundData/MHover/3.wav", "res://Sound/SoundData/MHover/4.wav", "res://Sound/SoundData/MHover/5.wav", "res://Sound/SoundData/MHover/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_2xo4c"]
+[sub_resource type="Resource" id="Resource_umq5a"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Move/1.wav", "res://Sound/SoundData/Move/2.wav", "res://Sound/SoundData/Move/3.wav", "res://Sound/SoundData/Move/4.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_md2ma"]
+[sub_resource type="Resource" id="Resource_nkg4v"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/MoveToEvent/1.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_kwg5l"]
+[sub_resource type="Resource" id="Resource_sqy5h"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/NoMoney/1.wav", "res://Sound/SoundData/NoMoney/2.wav", "res://Sound/SoundData/NoMoney/3.wav", "res://Sound/SoundData/NoMoney/4.wav", "res://Sound/SoundData/NoMoney/5.wav", "res://Sound/SoundData/NoMoney/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_nelbq"]
+[sub_resource type="Resource" id="Resource_avog5"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/OpenBag/1.wav", "res://Sound/SoundData/OpenBag/2.wav", "res://Sound/SoundData/OpenBag/3.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_51kf7"]
+[sub_resource type="Resource" id="Resource_ltrqn"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Pick/1.wav", "res://Sound/SoundData/Pick/2.wav", "res://Sound/SoundData/Pick/3.wav", "res://Sound/SoundData/Pick/4.wav", "res://Sound/SoundData/Pick/5.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_h6whj"]
+[sub_resource type="Resource" id="Resource_w7cgc"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Push/1.wav", "res://Sound/SoundData/Push/2.wav", "res://Sound/SoundData/Push/3.wav", "res://Sound/SoundData/Push/4.wav", "res://Sound/SoundData/Push/5.wav", "res://Sound/SoundData/Push/6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_8hcmx"]
+[sub_resource type="Resource" id="Resource_qijri"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Select/1.wav", "res://Sound/SoundData/Select/2.wav", "res://Sound/SoundData/Select/3.wav", "res://Sound/SoundData/Select/4.wav", "res://Sound/SoundData/Select/5.wav", "res://Sound/SoundData/Select/6.wav", "res://Sound/SoundData/Select/7.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_nkjfb"]
+[sub_resource type="Resource" id="Resource_807rk"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/SelectBlock/1.wav", "res://Sound/SoundData/SelectBlock/2.wav", "res://Sound/SoundData/SelectBlock/3.wav", "res://Sound/SoundData/SelectBlock/4.wav", "res://Sound/SoundData/SelectBlock/5.wav", "res://Sound/SoundData/SelectBlock/6.wav", "res://Sound/SoundData/SelectBlock/7.wav", "res://Sound/SoundData/SelectBlock/8.wav", "res://Sound/SoundData/SelectBlock/9.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_4wp52"]
+[sub_resource type="Resource" id="Resource_6clqo"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/ShotGun/1.wav", "res://Sound/SoundData/ShotGun/2.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_x7rt4"]
+[sub_resource type="Resource" id="Resource_t711b"]
 script = ExtResource("2_sc16m")
 Volume = 10
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Song1/1.mp3"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_qhg5p"]
+[sub_resource type="Resource" id="Resource_g1i2n"]
 script = ExtResource("2_sc16m")
 Volume = 10
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Song2/2.mp3"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_6227e"]
+[sub_resource type="Resource" id="Resource_4hrxw"]
 script = ExtResource("2_sc16m")
 Volume = 10
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Song3/3.mp3"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_0qs8t"]
+[sub_resource type="Resource" id="Resource_cl8eb"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Speak/a.wav", "res://Sound/SoundData/Speak/as.wav", "res://Sound/SoundData/Speak/asasas.wav", "res://Sound/SoundData/Speak/asdasd.wav", "res://Sound/SoundData/Speak/asdasda.wav", "res://Sound/SoundData/Speak/dadsa.wav", "res://Sound/SoundData/Speak/dd.wav", "res://Sound/SoundData/Speak/ds.wav", "res://Sound/SoundData/Speak/dsa.wav", "res://Sound/SoundData/Speak/speak.wav", "res://Sound/SoundData/Speak/speak2.wav", "res://Sound/SoundData/Speak/speak3.wav", "res://Sound/SoundData/Speak/speak4.wav", "res://Sound/SoundData/Speak/speak5.wav", "res://Sound/SoundData/Speak/speak6.wav", "res://Sound/SoundData/Speak/speak7.wav", "res://Sound/SoundData/Speak/speak8.wav", "res://Sound/SoundData/Speak/speak9.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_oulrc"]
+[sub_resource type="Resource" id="Resource_nb22y"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/SpeakDot/dot.wav", "res://Sound/SoundData/SpeakDot/dot2.wav", "res://Sound/SoundData/SpeakDot/dot3.wav", "res://Sound/SoundData/SpeakDot/dot4.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_5a23l"]
+[sub_resource type="Resource" id="Resource_a186k"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/SpeakEx/ex.wav", "res://Sound/SoundData/SpeakEx/ex1.wav", "res://Sound/SoundData/SpeakEx/ex2.wav", "res://Sound/SoundData/SpeakEx/ex3.wav", "res://Sound/SoundData/SpeakEx/ex4.wav", "res://Sound/SoundData/SpeakEx/ex5.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_7uwhe"]
+[sub_resource type="Resource" id="Resource_o0f1e"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/SpeakNum/n.wav", "res://Sound/SoundData/SpeakNum/n2.wav", "res://Sound/SoundData/SpeakNum/n3.wav", "res://Sound/SoundData/SpeakNum/n4.wav", "res://Sound/SoundData/SpeakNum/n5.wav", "res://Sound/SoundData/SpeakNum/n6.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_6hpln"]
+[sub_resource type="Resource" id="Resource_gqagp"]
 script = ExtResource("2_sc16m")
 Volume = -5
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/SpeakQ/q.wav", "res://Sound/SoundData/SpeakQ/q2.wav", "res://Sound/SoundData/SpeakQ/q3.wav", "res://Sound/SoundData/SpeakQ/q4.wav", "res://Sound/SoundData/SpeakQ/q5.wav"])
 PlayOncePerFrame = true
 
-[sub_resource type="Resource" id="Resource_k0q6u"]
+[sub_resource type="Resource" id="Resource_284bs"]
+script = ExtResource("2_sc16m")
+Volume = 0
+Pintch = 1.0
+SoundDri = Array[String](["res://Sound/SoundData/Transform/1.wav", "res://Sound/SoundData/Transform/2.wav"])
+PlayOncePerFrame = true
+
+[sub_resource type="Resource" id="Resource_0c8x6"]
 script = ExtResource("2_sc16m")
 Volume = 0
 Pintch = 1.0
@@ -265,42 +272,42 @@ PlayOncePerFrame = true
 [node name="SoundManager" type="Node"]
 script = ExtResource("1_54emm")
 Sounds = {
-"BHover": SubResource("Resource_q775u"),
-"BShow": SubResource("Resource_8657b"),
-"Check": SubResource("Resource_fw0fq"),
-"CloseBag": SubResource("Resource_fah4i"),
-"Combine": SubResource("Resource_2bd8w"),
-"Counter": SubResource("Resource_q1n62"),
-"Counter2": SubResource("Resource_vntod"),
-"Death": SubResource("Resource_uuoea"),
-"Drop": SubResource("Resource_bxnnx"),
-"Fire": SubResource("Resource_yqugn"),
-"GetPawn": SubResource("Resource_c3j61"),
-"Gold": SubResource("Resource_vsyjo"),
-"GoldBreak": SubResource("Resource_0kipf"),
-"Heal": SubResource("Resource_0poo3"),
-"Hit": SubResource("Resource_hksxp"),
-"Ice": SubResource("Resource_58jx3"),
-"IceBreak": SubResource("Resource_7oytu"),
-"LosePoint": SubResource("Resource_lyvh5"),
-"MHover": SubResource("Resource_ievpg"),
-"Move": SubResource("Resource_2xo4c"),
-"MoveToEvent": SubResource("Resource_md2ma"),
-"NoMoney": SubResource("Resource_kwg5l"),
-"OpenBag": SubResource("Resource_nelbq"),
-"Pick": SubResource("Resource_51kf7"),
-"Push": SubResource("Resource_h6whj"),
-"Select": SubResource("Resource_8hcmx"),
-"SelectBlock": SubResource("Resource_nkjfb"),
-"ShotGun": SubResource("Resource_4wp52"),
-"Song1": SubResource("Resource_x7rt4"),
-"Song2": SubResource("Resource_qhg5p"),
-"Song3": SubResource("Resource_6227e"),
-"Speak": SubResource("Resource_0qs8t"),
-"SpeakDot": SubResource("Resource_oulrc"),
-"SpeakEx": SubResource("Resource_5a23l"),
-"SpeakNum": SubResource("Resource_7uwhe"),
-"SpeakQ": SubResource("Resource_6hpln"),
-"WinPoint": SubResource("Resource_k0q6u")
+"BHover": SubResource("Resource_cgjd8"),
+"BShow": SubResource("Resource_cq205"),
+"Check": SubResource("Resource_d4afy"),
+"CloseBag": SubResource("Resource_s7asg"),
+"Combine": SubResource("Resource_mhafp"),
+"Counter": SubResource("Resource_7c1tc"),
+"Counter2": SubResource("Resource_144wd"),
+"Death": SubResource("Resource_b6fgn"),
+"Drop": SubResource("Resource_msequ"),
+"Fire": SubResource("Resource_8wb2e"),
+"GetPawn": SubResource("Resource_n1r13"),
+"Gold": SubResource("Resource_6l4b1"),
+"GoldBreak": SubResource("Resource_w8ok0"),
+"Heal": SubResource("Resource_m08bj"),
+"Hit": SubResource("Resource_owtxb"),
+"Ice": SubResource("Resource_f41n1"),
+"IceBreak": SubResource("Resource_r8bw7"),
+"LosePoint": SubResource("Resource_kxj2t"),
+"MHover": SubResource("Resource_3y2bf"),
+"Move": SubResource("Resource_umq5a"),
+"MoveToEvent": SubResource("Resource_nkg4v"),
+"NoMoney": SubResource("Resource_sqy5h"),
+"OpenBag": SubResource("Resource_avog5"),
+"Pick": SubResource("Resource_ltrqn"),
+"Push": SubResource("Resource_w7cgc"),
+"Select": SubResource("Resource_qijri"),
+"SelectBlock": SubResource("Resource_807rk"),
+"ShotGun": SubResource("Resource_6clqo"),
+"Song1": SubResource("Resource_t711b"),
+"Song2": SubResource("Resource_g1i2n"),
+"Song3": SubResource("Resource_4hrxw"),
+"Speak": SubResource("Resource_cl8eb"),
+"SpeakDot": SubResource("Resource_nb22y"),
+"SpeakEx": SubResource("Resource_a186k"),
+"SpeakNum": SubResource("Resource_o0f1e"),
+"SpeakQ": SubResource("Resource_gqagp"),
+"Transform": SubResource("Resource_284bs"),
+"WinPoint": SubResource("Resource_0c8x6")
 }
-PlayBGM = false

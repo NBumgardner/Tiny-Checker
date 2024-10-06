@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=3 uid="uid://dygqnox86sw7m"]
+[gd_scene load_steps=155 format=3 uid="uid://dygqnox86sw7m"]
 
 [ext_resource type="Script" path="res://Texture/TextureManager.gd" id="1_bm5nv"]
 [ext_resource type="Texture2D" uid="uid://4l6gvxll07p6" path="res://Texture/Data/Damage/1.png" id="2_d6bqq"]
@@ -100,6 +100,60 @@
 [ext_resource type="Texture2D" uid="uid://ccamvtu14umvx" path="res://Texture/Data/Shop/Sold.png" id="98_4sybg"]
 [ext_resource type="Texture2D" uid="uid://dx3qobdvmgws0" path="res://Texture/Data/Fight/Icon.png" id="99_6oo2u"]
 [ext_resource type="Texture2D" uid="uid://obuo6ddf7yex" path="res://Texture/Data/Fight/Icon2.png" id="100_u1dir"]
+[ext_resource type="Texture2D" uid="uid://ertujxpcmqh0" path="res://Texture/Data/Match/Lose.png" id="101_jaslu"]
+[ext_resource type="Texture2D" uid="uid://ckjyvihi0vw4c" path="res://Texture/Data/Match/Win.png" id="102_0j8q4"]
+[ext_resource type="Texture2D" uid="uid://btr4abe2bjop3" path="res://Texture/Data/Pawn/ButterFly/Back.png" id="103_ljd2n"]
+[ext_resource type="Texture2D" uid="uid://dwtvavdqslwlw" path="res://Texture/Data/Pawn/ButterFly/Line.png" id="104_oclec"]
+[ext_resource type="Texture2D" uid="uid://de8yxkbi3nabp" path="res://Texture/Data/Pawn/Coin/Back.png" id="105_y6fni"]
+[ext_resource type="Texture2D" uid="uid://daen1vkbqxwi8" path="res://Texture/Data/Pawn/Coin/Line.png" id="106_gr0bs"]
+[ext_resource type="Texture2D" uid="uid://ktee5qycyl11" path="res://Texture/Data/Pawn/Dirt/Back.png" id="107_ng3cw"]
+[ext_resource type="Texture2D" uid="uid://b07gwtleymylc" path="res://Texture/Data/Pawn/Dirt/Line.png" id="108_kxwjq"]
+[ext_resource type="Texture2D" uid="uid://b7448ghb1m520" path="res://Texture/Data/Pawn/Egg/Back.png" id="109_j8dcq"]
+[ext_resource type="Texture2D" uid="uid://pdjo1c3vx4u4" path="res://Texture/Data/Pawn/Egg/Line.png" id="110_wwg20"]
+[ext_resource type="Texture2D" uid="uid://cdkbye34d7uxm" path="res://Texture/Data/Pawn/FlyBomber/Back.png" id="111_5at0l"]
+[ext_resource type="Texture2D" uid="uid://r2y82a15aduc" path="res://Texture/Data/Pawn/FlyBomber/Line.png" id="112_vtvdu"]
+[ext_resource type="Texture2D" uid="uid://c2qxvr57dk43i" path="res://Texture/Data/Pawn/FlyCandle/Back.png" id="113_5n751"]
+[ext_resource type="Texture2D" uid="uid://6y5dd7drrjn7" path="res://Texture/Data/Pawn/FlyCandle/Line.png" id="114_hkq18"]
+[ext_resource type="Texture2D" uid="uid://ctidq66efu35x" path="res://Texture/Data/Pawn/FlyKing/Back.png" id="115_nmnl6"]
+[ext_resource type="Texture2D" uid="uid://bg82xeqkw01gl" path="res://Texture/Data/Pawn/FlyKing/Line.png" id="116_ad86m"]
+[ext_resource type="Texture2D" uid="uid://cpac53yt5fwon" path="res://Texture/Data/Pawn/FlyPawn/Back.png" id="117_ltrmt"]
+[ext_resource type="Texture2D" uid="uid://bawnuki77imbf" path="res://Texture/Data/Pawn/FlyPawn/Line.png" id="118_3wqnf"]
+[ext_resource type="Texture2D" uid="uid://c1w8jntokh1kp" path="res://Texture/Data/Pawn/Hedgehog/Back.png" id="119_jiunq"]
+[ext_resource type="Texture2D" uid="uid://cspnnmnnlbm2w" path="res://Texture/Data/Pawn/Hedgehog/Line.png" id="120_h77lc"]
+[ext_resource type="Texture2D" uid="uid://b2clj2rdr1obb" path="res://Texture/Data/Pawn/Kangaroo/Back.png" id="121_52rw8"]
+[ext_resource type="Texture2D" uid="uid://mwyg7ip44n38" path="res://Texture/Data/Pawn/Kangaroo/Line.png" id="122_nfgt1"]
+[ext_resource type="Texture2D" uid="uid://w37gdiaf5fqy" path="res://Texture/Data/Pawn/Mole/Back.png" id="123_iapae"]
+[ext_resource type="Texture2D" uid="uid://b1t4cyn4l5ean" path="res://Texture/Data/Pawn/Mole/Line.png" id="124_3b3ce"]
+[ext_resource type="Texture2D" uid="uid://bwqy10wxltipq" path="res://Texture/Data/Pawn/Paper/Back.png" id="125_bhnfk"]
+[ext_resource type="Texture2D" uid="uid://cqwgfbsu7caql" path="res://Texture/Data/Pawn/Paper/Line.png" id="126_ptqis"]
+[ext_resource type="Texture2D" uid="uid://bvya2eveirrqw" path="res://Texture/Data/Pawn/Raven/Back.png" id="127_5v211"]
+[ext_resource type="Texture2D" uid="uid://r7gps02jw1p1" path="res://Texture/Data/Pawn/Raven/Line.png" id="128_grouq"]
+[ext_resource type="Texture2D" uid="uid://bcy4kky8sdfbx" path="res://Texture/Data/Pawn/Seagull/Back.png" id="129_n7ykm"]
+[ext_resource type="Texture2D" uid="uid://bdvw60mw2rdt7" path="res://Texture/Data/Pawn/Seagull/Line.png" id="130_mu7tw"]
+[ext_resource type="Texture2D" uid="uid://c57aatc16a6mx" path="res://Texture/Data/Pawn/Sheild/Back.png" id="131_w7mx5"]
+[ext_resource type="Texture2D" uid="uid://bh58epo81j36m" path="res://Texture/Data/Pawn/Sheild/Line.png" id="132_jqvqg"]
+[ext_resource type="Texture2D" uid="uid://vdxp4f8arq14" path="res://Texture/Data/Pawn/ShotGunKing/Back.png" id="133_j1xbu"]
+[ext_resource type="Texture2D" uid="uid://ic3hodjya2t3" path="res://Texture/Data/Pawn/ShotGunKing/Line.png" id="134_qrm2c"]
+[ext_resource type="Texture2D" uid="uid://b0pa87hi8v7fy" path="res://Texture/Data/Pawn/Snail/Back.png" id="135_awk1o"]
+[ext_resource type="Texture2D" uid="uid://bpfk8t2lchbmq" path="res://Texture/Data/Pawn/Snail/Line.png" id="136_eshcq"]
+[ext_resource type="Texture2D" uid="uid://156nqqdd2q3o" path="res://Texture/Data/Pawn/Sparrow/Back.png" id="137_2emyy"]
+[ext_resource type="Texture2D" uid="uid://n172tofl2yyp" path="res://Texture/Data/Pawn/Sparrow/Line.png" id="138_lwcpt"]
+[ext_resource type="Texture2D" uid="uid://blkiq85rk86mo" path="res://Texture/Data/Pawn/SpineBomber/Back.png" id="139_b8k8l"]
+[ext_resource type="Texture2D" uid="uid://b3wbelo0b3607" path="res://Texture/Data/Pawn/SpineBomber/Line.png" id="140_sf4eo"]
+[ext_resource type="Texture2D" uid="uid://ddocop404s6fi" path="res://Texture/Data/Pawn/SpineCandle/Back.png" id="141_qt77x"]
+[ext_resource type="Texture2D" uid="uid://dgk4opn7h8ujg" path="res://Texture/Data/Pawn/SpineCandle/Line.png" id="142_w32y8"]
+[ext_resource type="Texture2D" uid="uid://13ichn41dwno" path="res://Texture/Data/Pawn/SpineKing/Back.png" id="143_bs3ws"]
+[ext_resource type="Texture2D" uid="uid://d3xnucmibh21n" path="res://Texture/Data/Pawn/SpineKing/Line.png" id="144_taq4d"]
+[ext_resource type="Texture2D" uid="uid://dvscv7uped2ns" path="res://Texture/Data/Pawn/SpinePawn/Back.png" id="145_mf8fe"]
+[ext_resource type="Texture2D" uid="uid://com7w8mt16pjn" path="res://Texture/Data/Pawn/SpinePawn/Line.png" id="146_rhohw"]
+[ext_resource type="Texture2D" uid="uid://dwexxx528qttn" path="res://Texture/Data/Pawn/SpineTallCandle/Back.png" id="147_oi8lx"]
+[ext_resource type="Texture2D" uid="uid://dw5odn2figq1x" path="res://Texture/Data/Pawn/SpineTallCandle/Line.png" id="148_blpdx"]
+[ext_resource type="Texture2D" uid="uid://bhr1qpu0m1cec" path="res://Texture/Data/Pawn/SpinrRook/Back.png" id="149_1fsa1"]
+[ext_resource type="Texture2D" uid="uid://c2k4ktijpfmta" path="res://Texture/Data/Pawn/SpinrRook/Line.png" id="150_byyst"]
+[ext_resource type="Texture2D" uid="uid://bxrgjcxncv6k7" path="res://Texture/Data/Pawn/TallCandel/Back.png" id="151_xpsfo"]
+[ext_resource type="Texture2D" uid="uid://bcbvhaxlgybto" path="res://Texture/Data/Pawn/TallCandel/Line.png" id="152_ck4pf"]
+[ext_resource type="Texture2D" uid="uid://ccpqjb73c0dw5" path="res://Texture/Data/Pawn/TinyKangaroo/Back.png" id="153_ijaku"]
+[ext_resource type="Texture2D" uid="uid://43rmeinmgww2" path="res://Texture/Data/Pawn/TinyKangaroo/Line.png" id="154_ems8k"]
 
 [node name="TextureManager" type="Node"]
 script = ExtResource("1_bm5nv")
@@ -133,6 +187,10 @@ Textures = {
 "FightIcon2": "res://Texture/Data/Fight/Icon2.png",
 "FireP": "res://Texture/Data/Fire/P.png",
 "HeartP": "res://Texture/Data/Heart/P.png",
+"INT1": "res://Texture/Data/INT/1.png",
+"INT2": "res://Texture/Data/INT/2.png",
+"INT3": "res://Texture/Data/INT/3.png",
+"INT4": "res://Texture/Data/INT/4.png",
 "IceBack": "res://Texture/Data/Ice/Back.png",
 "IceLine": "res://Texture/Data/Ice/Line.png",
 "IcePB1": "res://Texture/Data/Ice/PB1.png",
@@ -294,6 +352,8 @@ _tex = {
 "IcePB2": ExtResource("24_jdo03"),
 "IcePL1": ExtResource("25_2whgo"),
 "IcePL2": ExtResource("26_thf3o"),
+"MatchLose": ExtResource("101_jaslu"),
+"MatchWin": ExtResource("102_0j8q4"),
 "PawnBeaverBack": ExtResource("27_8dlht"),
 "PawnBeaverDamBack": ExtResource("28_1juwp"),
 "PawnBeaverDamLine": ExtResource("29_u5hfq"),
@@ -302,28 +362,80 @@ _tex = {
 "PawnBigStoneLine": ExtResource("79_l4mgi"),
 "PawnBomberBack": ExtResource("31_tsya6"),
 "PawnBomberLine": ExtResource("32_hoglj"),
+"PawnButterFlyBack": ExtResource("103_ljd2n"),
+"PawnButterFlyLine": ExtResource("104_oclec"),
 "PawnCandleBack": ExtResource("33_vv247"),
 "PawnCandleLine": ExtResource("34_p4xer"),
+"PawnCoinBack": ExtResource("105_y6fni"),
+"PawnCoinLine": ExtResource("106_gr0bs"),
 "PawnCrownBack": ExtResource("35_5dkjf"),
 "PawnCrownLine": ExtResource("36_uevp5"),
+"PawnDirtBack": ExtResource("107_ng3cw"),
+"PawnDirtLine": ExtResource("108_kxwjq"),
+"PawnEggBack": ExtResource("109_j8dcq"),
+"PawnEggLine": ExtResource("110_wwg20"),
+"PawnFlyBomberBack": ExtResource("111_5at0l"),
+"PawnFlyBomberLine": ExtResource("112_vtvdu"),
+"PawnFlyCandleBack": ExtResource("113_5n751"),
+"PawnFlyCandleLine": ExtResource("114_hkq18"),
+"PawnFlyKingBack": ExtResource("115_nmnl6"),
+"PawnFlyKingLine": ExtResource("116_ad86m"),
+"PawnFlyPawnBack": ExtResource("117_ltrmt"),
+"PawnFlyPawnLine": ExtResource("118_3wqnf"),
 "PawnGoldBack": ExtResource("80_1vs1p"),
 "PawnGoldLine": ExtResource("81_bya2e"),
 "PawnGrassBack": ExtResource("82_2i8gb"),
 "PawnGrassLine": ExtResource("83_i3bu6"),
 "PawnHeartBack": ExtResource("37_pme13"),
 "PawnHeartLine": ExtResource("38_y1re6"),
+"PawnHedgehogBack": ExtResource("119_jiunq"),
+"PawnHedgehogLine": ExtResource("120_h77lc"),
+"PawnKangarooBack": ExtResource("121_52rw8"),
+"PawnKangarooLine": ExtResource("122_nfgt1"),
+"PawnMoleBack": ExtResource("123_iapae"),
+"PawnMoleLine": ExtResource("124_3b3ce"),
+"PawnPaperBack": ExtResource("125_bhnfk"),
+"PawnPaperLine": ExtResource("126_ptqis"),
+"PawnRavenBack": ExtResource("127_5v211"),
+"PawnRavenLine": ExtResource("128_grouq"),
 "PawnRookBack": ExtResource("39_641v4"),
 "PawnRookLine": ExtResource("40_1knlv"),
 "PawnRoundHeadBack": ExtResource("41_c3i3e"),
 "PawnRoundHeadLine": ExtResource("42_hdhyi"),
+"PawnSeagullBack": ExtResource("129_n7ykm"),
+"PawnSeagullLine": ExtResource("130_mu7tw"),
+"PawnSheildBack": ExtResource("131_w7mx5"),
+"PawnSheildLine": ExtResource("132_jqvqg"),
+"PawnShotGunKingBack": ExtResource("133_j1xbu"),
+"PawnShotGunKingLine": ExtResource("134_qrm2c"),
+"PawnSnailBack": ExtResource("135_awk1o"),
+"PawnSnailLine": ExtResource("136_eshcq"),
 "PawnSnowGlobeBack": ExtResource("43_7xvib"),
 "PawnSnowGlobeLine": ExtResource("44_jawly"),
 "PawnSnowManBack": ExtResource("45_hnby0"),
 "PawnSnowManLine": ExtResource("46_xuluj"),
+"PawnSparrowBack": ExtResource("137_2emyy"),
+"PawnSparrowLine": ExtResource("138_lwcpt"),
+"PawnSpineBomberBack": ExtResource("139_b8k8l"),
+"PawnSpineBomberLine": ExtResource("140_sf4eo"),
+"PawnSpineCandleBack": ExtResource("141_qt77x"),
+"PawnSpineCandleLine": ExtResource("142_w32y8"),
+"PawnSpineKingBack": ExtResource("143_bs3ws"),
+"PawnSpineKingLine": ExtResource("144_taq4d"),
+"PawnSpinePawnBack": ExtResource("145_mf8fe"),
+"PawnSpinePawnLine": ExtResource("146_rhohw"),
+"PawnSpineTallCandleBack": ExtResource("147_oi8lx"),
+"PawnSpineTallCandleLine": ExtResource("148_blpdx"),
+"PawnSpinrRookBack": ExtResource("149_1fsa1"),
+"PawnSpinrRookLine": ExtResource("150_byyst"),
 "PawnStoneBack": ExtResource("84_0pkak"),
 "PawnStoneLine": ExtResource("85_ukoul"),
 "PawnStumpBack": ExtResource("47_yo2ev"),
 "PawnStumpLine": ExtResource("48_dc32f"),
+"PawnTallCandelBack": ExtResource("151_xpsfo"),
+"PawnTallCandelLine": ExtResource("152_ck4pf"),
+"PawnTinyKangarooBack": ExtResource("153_ijaku"),
+"PawnTinyKangarooLine": ExtResource("154_ems8k"),
 "PawnTotemAngerBack": ExtResource("49_pdfn3"),
 "PawnTotemAngerLine": ExtResource("50_1n1no"),
 "PawnTotemFlyBack": ExtResource("51_k76b2"),

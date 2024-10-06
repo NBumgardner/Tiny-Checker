@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwml4bksbhndt"]
+
+[ext_resource type="Script" path="res://_UI/Initer.gd" id="1_poa6s"]
+
+[node name="Init" type="Node2D"]
+script = ExtResource("1_poa6s")
+discribe = "About The Game 
+
+
+Game Type : Checker
+Game Duration : 10min (I'm not sure)
+
+
+This is a game of checkers
+By moving and jumping,
+Place enough piecesto the 
+opponent's field to wins the game"

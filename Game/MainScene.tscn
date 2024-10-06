@@ -1,18 +1,42 @@
-[gd_scene load_steps=6 format=3 uid="uid://ceya17p0pscsw"]
+[gd_scene load_steps=8 format=3 uid="uid://ceya17p0pscsw"]
 
 [ext_resource type="PackedScene" uid="uid://bxm80dnq67htt" path="res://Game/Match/MatchScene.tscn" id="1_pmppj"]
 [ext_resource type="Script" path="res://Game/Game.gd" id="1_sdluo"]
 [ext_resource type="Resource" uid="uid://cwep7vq0dxjtu" path="res://Game/GameData.res" id="2_tg04x"]
 [ext_resource type="PackedScene" uid="uid://b7k1sfodp113n" path="res://_UI/RoundShower/RoundShower.tscn" id="3_8o4rr"]
 [ext_resource type="PackedScene" uid="uid://bed6kg3s3rda4" path="res://Game/Map/Map.tscn" id="4_gbt7i"]
+[ext_resource type="Script" path="res://_UI/Initer.gd" id="4_xgx8n"]
+[ext_resource type="Script" path="res://_UI/End.gd" id="7_yi4kn"]
 
-[node name="MainScene" type="Node2D" node_paths=PackedStringArray("MainMatch", "MainMap", "MatchShower", "MapShower")]
+[node name="MainScene" type="Node2D" node_paths=PackedStringArray("MainMatch", "MainMap", "MatchShower", "MapShower", "E")]
 script = ExtResource("1_sdluo")
 Data = ExtResource("2_tg04x")
 MainMatch = NodePath("Match/SubViewportContainer/SubViewport/MatchScene")
 MainMap = NodePath("Map/SubViewportContainer/SubViewport/Map")
 MatchShower = NodePath("Match")
 MapShower = NodePath("Map")
+E = NodePath("Polygon2D2/Node2D")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Polygon2D" parent="." instance=ExtResource("3_8o4rr")]
+
+[node name="Init" type="Node2D" parent="Polygon2D" node_paths=PackedStringArray("Show", "MainGame", "Lay")]
+script = ExtResource("4_xgx8n")
+discribe = "About The Game 
+
+
+Game Type : Checker
+Game Duration : 10min (I'm not sure)
+
+
+This is a game of checkers
+By moving and jumping,
+Place enough piecesto the 
+opponent's field to wins the game"
+Show = NodePath("..")
+MainGame = NodePath("../..")
+Lay = NodePath("../../Node2D")
 
 [node name="Map" parent="." instance=ExtResource("3_8o4rr")]
 
@@ -43,3 +67,9 @@ render_target_update_mode = 4
 WinColor = Color(0.994301, 0.830387, 0.455479, 1)
 LostColor = Color(1, 0.603046, 0.634485, 1)
 MainGame = NodePath("../../../..")
+
+[node name="Polygon2D2" parent="." instance=ExtResource("3_8o4rr")]
+
+[node name="Node2D" type="Node2D" parent="Polygon2D2" node_paths=PackedStringArray("Show")]
+script = ExtResource("7_yi4kn")
+Show = NodePath("..")

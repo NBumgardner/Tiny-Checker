@@ -8,7 +8,7 @@
 [ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="6_couqr"]
 [ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextData.gd" id="7_jrsgu"]
 
-[sub_resource type="Resource" id="Resource_xd6ub"]
+[sub_resource type="Resource" id="Resource_a048l"]
 resource_local_to_scene = true
 script = ExtResource("6_couqr")
 Size = 1.0
@@ -35,10 +35,10 @@ AnimeName = "Random"
 SountSetName = ""
 CycleLength = 300.0
 
-[sub_resource type="Resource" id="Resource_gwo3l"]
+[sub_resource type="Resource" id="Resource_uemuq"]
 resource_local_to_scene = true
 script = ExtResource("7_jrsgu")
-DefaultHead = SubResource("Resource_xd6ub")
+DefaultHead = SubResource("Resource_a048l")
 Text = "asdfoais-a.sd asd asa ?????a sd asd.a s  j  j  j
 d as.da sd a.!!!!8235252273iau5s hf8w7yiau
 sdhg23fa998q 9fi <0>auuhdbuas<> igduzsygc ujzhb
@@ -70,7 +70,6 @@ Target = NodePath("../BackGround")
 
 [node name="BackGround" type="Polygon2D" parent="."]
 visible = false
-clip_children = 2
 position = Vector2(24, 11)
 color = Color(0, 0, 0, 1)
 antialiased = true
@@ -102,4 +101,5 @@ dataUpdated = true
 
 [node name="TextBox" type="Node2D" parent="BackGround"]
 script = ExtResource("5_d1nov")
-Data = SubResource("Resource_gwo3l")
+Data = SubResource("Resource_uemuq")
+MinInterTime = 0.005

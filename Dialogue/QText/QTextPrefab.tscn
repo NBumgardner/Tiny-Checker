@@ -29,3 +29,4 @@ HeadList = Array[ExtResource("2_xsu81")]([])
 [node name="QTextPrefab" type="Node2D"]
 script = ExtResource("1_84eti")
 Data = SubResource("Resource_e6wp5")
+MinInterTime = 0.005

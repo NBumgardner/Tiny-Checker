@@ -2,15 +2,12 @@ class_name Shower
 extends Polygon2D
 
 
-var f:FloatFollowCounter
+var f:FloatFollowCounter = FloatFollowCounter.new()
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	f = FloatFollowCounter.new()
 	f.Speed = 0.7
-	f.End = 0
-	f.Cur = 0
 	SetRadin(0)
 
 

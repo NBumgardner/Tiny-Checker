@@ -122,7 +122,7 @@ func InitMap():
 func InitEventLayer():
 	EventLayer.position = ScreenCenter
 	
-	var dis = 400
+	var dis = 300
 	for i in Events:
 		InitEventLine(dis,i)
 		dis+=400

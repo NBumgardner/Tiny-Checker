@@ -296,6 +296,15 @@ func AddPawn(p:PawnData,pawnPosition:Vector2 = Vector2(1920/2,1080/2)):
 	
 	
 
+func ReStart():
+	for i in Slots:
+		for j in i:
+			if (j as BackPackCell).P!=null:
+				(j as BackPackCell).P.queue_free()
+				(j as BackPackCell).P = null
+	InitPawn()
+	
+
 func _process(delta: float) -> void:
 	if Active:
 		if OnScreen:
