@@ -1,0 +1,23 @@
+[gd_scene load_steps=9 format=3 uid="uid://d3aow32mxkb2b"]
+
+[ext_resource type="Script" path="res://Pawn/PawnManager.gd" id="1_b272o"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="2_63j6t"]
+[ext_resource type="Resource" uid="uid://c0admrjwwrc5y" path="res://Pawn/PawnResource/Player/PlayerPawn.res" id="3_ctx36"]
+[ext_resource type="Resource" uid="uid://bvnu65tl87d6v" path="res://Pawn/PawnResource/Player/PlayerKing.res" id="4_4bpfj"]
+[ext_resource type="Resource" uid="uid://cdjq2cpvpb6pi" path="res://Pawn/PawnResource/Player/Totem1.res" id="5_nelf8"]
+[ext_resource type="Resource" uid="uid://o38g4evlys3n" path="res://Pawn/PawnResource/Enemy/EnemyPawn.tres" id="6_ubo5x"]
+[ext_resource type="Resource" uid="uid://k4yh1w7y2y50" path="res://Pawn/PawnResource/Nutrial/Dam.tres" id="7_u4uah"]
+
+[sub_resource type="Curve" id="Curve_gb5iw"]
+_data = [Vector2(0, 0), 0.0, 0.259382, 0, 0, Vector2(0.499268, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.322196, 0.0, 0, 0]
+point_count = 3
+
+[node name="PawnManager" type="Node"]
+script = ExtResource("1_b272o")
+PlayerPawns = Array[ExtResource("2_63j6t")]([ExtResource("3_ctx36"), ExtResource("4_4bpfj"), ExtResource("5_nelf8"), ExtResource("6_ubo5x")])
+PawnsInDic = Array[ExtResource("2_63j6t")]([ExtResource("7_u4uah")])
+DefaultJumpHoverColor = Color(1, 0.40161, 0.513757, 1)
+DefaultMoveHoverColor = Color(1, 0.879344, 0.488505, 1)
+DefaultPushHoverColor = Color(0.729297, 1, 0.471117, 1)
+DefaultOffendHoverColor = Color(1, 0.503333, 0.885783, 1)
+WubbleCurve = SubResource("Curve_gb5iw")

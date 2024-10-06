@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="PawnData" load_steps=12 format=3 uid="uid://bvp4djm887x8c"]
+
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_frimf"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_kahs0"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_3p72t"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_ru6sv"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_ddmlu"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_rpfin"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_o6138"]
+
+[sub_resource type="Resource" id="Resource_nuu5a"]
+script = ExtResource("5_ddmlu")
+Type = 1
+MoveRange = 2
+HoverColor = Color(1, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_ym1s0"]
+script = ExtResource("5_ddmlu")
+Type = 2
+MoveRange = 2
+HoverColor = Color(1, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_vxsby"]
+script = ExtResource("6_rpfin")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_phc0e"]
+script = ExtResource("6_rpfin")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 40.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = "PawnSeagullBack"
+TextureLine = Array[String](["PawnSeagullLine"])
+Colors = Array[Color]([])
+
+[resource]
+script = ExtResource("7_o6138")
+PartsData = Array[ExtResource("6_rpfin")]([SubResource("Resource_vxsby"), SubResource("Resource_phc0e")])
+Value = 2
+Type = 0
+Flag = 0
+DisPlayName = "Seagull"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 2
+MaxHP = 3
+InitSheild = 0
+CanJump = false
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("5_ddmlu")]([SubResource("Resource_nuu5a"), SubResource("Resource_ym1s0")])
+AfterTakeDamage = Array[ExtResource("3_3p72t")]([])
+AfterMove = Array[ExtResource("2_kahs0")]([])
+AfterDeath = Array[ExtResource("1_frimf")]([])
+AfterTurn = Array[ExtResource("4_ru6sv")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false

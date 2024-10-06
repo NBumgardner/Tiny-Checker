@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://6ae1khq6c4r7"]
+
+[ext_resource type="Script" path="res://Game/Map/Money.gd" id="1_n58y5"]
+[ext_resource type="Texture2D" uid="uid://dpdbgkrs8vsny" path="res://Texture/Data/Coin/B.png" id="2_0ihg1"]
+
+[node name="Money" type="Node2D" node_paths=PackedStringArray("Layer")]
+modulate = Color(0.956863, 0.733333, 0.34902, 1)
+position = Vector2(112, 115)
+script = ExtResource("1_n58y5")
+Layer = NodePath("Node2D")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+texture = ExtResource("2_0ihg1")

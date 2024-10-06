@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqdbmcla8jjfr"]
+
+[ext_resource type="Script" path="res://_UI/Score/Score.gd" id="1_vyve8"]
+
+[node name="Score" type="Node2D"]
+position = Vector2(1081, 526)
+script = ExtResource("1_vyve8")

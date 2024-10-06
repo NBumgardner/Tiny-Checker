@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cajul47b21v4c"]
+
+[ext_resource type="Texture2D" uid="uid://bpk6tedkimpyh" path="res://Texture/Data/Shape/Circle.png" id="1_r6031"]
+[ext_resource type="Script" path="res://Shape2D/RoundSprite/RoundSprite.gd" id="2_oep0a"]
+
+[node name="RoundPrefab" type="Sprite2D"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_r6031")
+script = ExtResource("2_oep0a")

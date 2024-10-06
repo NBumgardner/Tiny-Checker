@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EnemyGroup" load_steps=8 format=3 uid="uid://bwbqeub5uv05r"]
+
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="1_h8ped"]
+[ext_resource type="Resource" uid="uid://jx27i3hy1jmw" path="res://Pawn/PawnResource/Enemy/SpineKing.res" id="2_eopds"]
+[ext_resource type="Script" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_pq07c"]
+[ext_resource type="Resource" uid="uid://cg8ch4t3bkndp" path="res://Pawn/PawnResource/Enemy/SpinePawn.tres" id="3_t73ow"]
+[ext_resource type="Resource" uid="uid://dlhxas1ady354" path="res://Pawn/PawnResource/Enemy/SpineRook.res" id="4_h6k72"]
+[ext_resource type="Resource" uid="uid://dokpqe8bwxdic" path="res://Pawn/PawnResource/Enemy/SpineBomber.res" id="5_g0eud"]
+[ext_resource type="Resource" uid="uid://b8e73ehmogdn6" path="res://Pawn/PawnResource/Enemy/SpineCandle.res" id="6_5nodm"]
+
+[resource]
+script = ExtResource("2_pq07c")
+AddTurn = 0
+InitPosition = Vector2i(2, 0)
+InitPawnList = Array[ExtResource("1_h8ped")]([ExtResource("2_eopds"), ExtResource("3_t73ow"), ExtResource("3_t73ow"), ExtResource("4_h6k72"), ExtResource("5_g0eud"), ExtResource("5_g0eud"), ExtResource("6_5nodm"), ExtResource("6_5nodm")])
+Offset = Array[Vector2i]([Vector2i(0, 0), Vector2i(-1, 1), Vector2i(0, 1), Vector2i(-1, 2), Vector2i(0, 2), Vector2i(1, 2), Vector2i(-2, 3), Vector2i(-1, 3)])
+MoveTimes = 1
+WaitTurn = 0

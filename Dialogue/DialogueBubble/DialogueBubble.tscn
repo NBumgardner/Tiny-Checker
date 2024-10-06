@@ -1,0 +1,105 @@
+[gd_scene load_steps=11 format=3 uid="uid://dsy2ucuqcfhdi"]
+
+[ext_resource type="Script" path="res://Dialogue/DialogueBubble/DialogueBubble.gd" id="1_s3hcf"]
+[ext_resource type="Script" path="res://Shape2D/RoundBox/BezierRoundBoxArea.gd" id="2_pn20b"]
+[ext_resource type="Script" path="res://Shape2D/RoundBox/BezierRoundBoxBorder.gd" id="3_4ke6h"]
+[ext_resource type="Script" path="res://Shape2D/ShapeCopyerArea.gd" id="4_j6s55"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/TextBox.gd" id="5_d1nov"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="6_couqr"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextData.gd" id="7_jrsgu"]
+
+[sub_resource type="Resource" id="Resource_xd6ub"]
+resource_local_to_scene = true
+script = ExtResource("6_couqr")
+Size = 1.0
+CharDistant = 0.1
+LineDistant = 55.0
+LineOffset = 0.0
+TextColor = Color(1, 1, 1, 1)
+Speed = 2.0
+FontName = ""
+AnimeName = ""
+SountSetName = ""
+CycleLength = 300.0
+
+[sub_resource type="Resource" id="Resource_mkek8"]
+script = ExtResource("6_couqr")
+Size = 2.0
+CharDistant = 0.1
+LineDistant = 55.0
+LineOffset = 50.0
+TextColor = Color(0.997205, 0, 0, 1)
+Speed = 0.2
+FontName = ""
+AnimeName = "Random"
+SountSetName = ""
+CycleLength = 300.0
+
+[sub_resource type="Resource" id="Resource_gwo3l"]
+resource_local_to_scene = true
+script = ExtResource("7_jrsgu")
+DefaultHead = SubResource("Resource_xd6ub")
+Text = "asdfoais-a.sd asd asa ?????a sd asd.a s  j  j  j
+d as.da sd a.!!!!8235252273iau5s hf8w7yiau
+sdhg23fa998q 9fi <0>auuhdbuas<> igduzsygc ujzhb
+alskdhlsgkdjalsdkgjldkgjladkgjladkfgjladkgjlsdkfj
+asdgjasgasdgasdgasdgsagdsgsdgsdgsdgsdggd
+gggggggggggggggggggggggggggggggggggg
+................................................................................."
+HeadList = Array[ExtResource("6_couqr")]([SubResource("Resource_mkek8")])
+
+[node name="DialogueBubble" type="Node2D" node_paths=PackedStringArray("BackGround", "Borader", "Patten", "Text")]
+position = Vector2(1096, 617)
+script = ExtResource("1_s3hcf")
+Board2 = Vector2(100, 100)
+BounceSpeed = Vector2(0.7, 1)
+BounceDecay = Vector2(1.6, 1.6)
+BackGround = NodePath("BackGround")
+Borader = NodePath("BackGround/Borader")
+Patten = NodePath("BackGround/Patten")
+Text = NodePath("BackGround/TextBox")
+
+[node name="Shadow" type="Polygon2D" parent="." node_paths=PackedStringArray("Target")]
+visible = false
+position = Vector2(39, 31)
+color = Color(0.114897, 0.114897, 0.114897, 1)
+antialiased = true
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+script = ExtResource("4_j6s55")
+Target = NodePath("../BackGround")
+
+[node name="BackGround" type="Polygon2D" parent="."]
+visible = false
+clip_children = 2
+position = Vector2(24, 11)
+color = Color(0, 0, 0, 1)
+antialiased = true
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+script = ExtResource("2_pn20b")
+Radin = 50.0
+dataUpdated = true
+
+[node name="Borader" type="Line2D" parent="BackGround"]
+visible = false
+position = Vector2(0, -1)
+points = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+closed = true
+width = 4.0
+default_color = Color(0.7, 0.7, 0.7, 1)
+antialiased = true
+script = ExtResource("3_4ke6h")
+Radin = 45.0
+dataUpdated = true
+
+[node name="Patten" type="Polygon2D" parent="BackGround"]
+visible = false
+color = Color(0.15, 0.15, 0.15, 1)
+antialiased = true
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+script = ExtResource("2_pn20b")
+Radin = 38.0
+dataUpdated = true
+
+[node name="TextBox" type="Node2D" parent="BackGround"]
+script = ExtResource("5_d1nov")
+Data = SubResource("Resource_gwo3l")

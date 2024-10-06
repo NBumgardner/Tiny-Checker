@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckegh7og5iye7"]
+
+[ext_resource type="Script" path="res://Game/Map/Event/Shop/ShopEvent.gd" id="1_2at5h"]
+[ext_resource type="Texture2D" uid="uid://cihshivlxerha" path="res://Texture/Data/Shop/Icon.png" id="2_vw4vl"]
+[ext_resource type="Texture2D" uid="uid://bsyrcmq0lqk52" path="res://Texture/Data/Shop/Back.png" id="3_m3863"]
+[ext_resource type="Texture2D" uid="uid://diyktt0ihgbdf" path="res://Texture/Data/Shop/Frame.png" id="4_aauia"]
+
+[node name="Shop" type="Node2D" node_paths=PackedStringArray("ShowItem")]
+position = Vector2(690, 457)
+script = ExtResource("1_2at5h")
+Icon = ExtResource("2_vw4vl")
+ShowItem = [NodePath("Sprite2D"), NodePath("Sprite2D2")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_m3863")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("4_aauia")

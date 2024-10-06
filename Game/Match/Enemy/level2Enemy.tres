@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="EnemyGroup" load_steps=19 format=3 uid="uid://c2gta6jo0ywb0"]
+
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="1_tx0u1"]
+[ext_resource type="Script" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_a8gjq"]
+[ext_resource type="Resource" uid="uid://bteuqfqh4w6qf" path="res://Pawn/PawnResource/Enemy/EnemyKing.res" id="2_o01on"]
+[ext_resource type="Resource" uid="uid://dwgp5bfvvt64f" path="res://Pawn/PawnResource/Enemy/FlyPawn.tres" id="3_ghknl"]
+[ext_resource type="Resource" uid="uid://o38g4evlys3n" path="res://Pawn/PawnResource/Enemy/EnemyPawn.tres" id="4_da7xx"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="6_3revv"]
+[ext_resource type="Resource" uid="uid://cg8ch4t3bkndp" path="res://Pawn/PawnResource/Enemy/SpinePawn.tres" id="6_ufm0a"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="7_tklmy"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="8_w4jlt"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="9_5ejsn"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="10_q5spo"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="11_ntrpx"]
+
+[sub_resource type="Resource" id="Resource_ucww6"]
+script = ExtResource("10_q5spo")
+Type = 0
+MoveRange = 10
+HoverColor = Color(1, 0.737759, 0.126796, 1)
+
+[sub_resource type="Resource" id="Resource_u4oyj"]
+script = ExtResource("11_ntrpx")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 0.482353, 0.509804, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_x8vhl"]
+script = ExtResource("11_ntrpx")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 20.0
+TopRadin = 16.0
+CurveRadin = 0.0
+height = 40.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 0.482353, 0.509804, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_t3x2r"]
+script = ExtResource("11_ntrpx")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 20.0
+TopRadin = 20.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 0.482353, 0.509804, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_vixxt"]
+script = ExtResource("11_ntrpx")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 0.482353, 0.509804, 1)
+TextureBack = "PawnRookBack"
+TextureLine = Array[String](["PawnRookLine"])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_ukcfl"]
+script = ExtResource("1_tx0u1")
+PartsData = Array[ExtResource("11_ntrpx")]([SubResource("Resource_u4oyj"), SubResource("Resource_x8vhl"), SubResource("Resource_t3x2r"), SubResource("Resource_vixxt")])
+Value = 1
+Type = 0
+Flag = 2
+DisPlayName = "Rook"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 1
+MaxHP = 6
+InitSheild = 0
+CanJump = true
+CanWalk = false
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("10_q5spo")]([SubResource("Resource_ucww6")])
+AfterTakeDamage = Array[ExtResource("8_w4jlt")]([])
+AfterMove = Array[ExtResource("7_tklmy")]([])
+AfterDeath = Array[ExtResource("6_3revv")]([])
+AfterTurn = Array[ExtResource("9_5ejsn")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false
+
+[resource]
+script = ExtResource("2_a8gjq")
+AddTurn = 0
+InitPosition = Vector2i(3, 0)
+InitPawnList = Array[ExtResource("1_tx0u1")]([ExtResource("2_o01on"), ExtResource("3_ghknl"), ExtResource("3_ghknl"), ExtResource("4_da7xx"), ExtResource("4_da7xx"), ExtResource("6_ufm0a"), ExtResource("6_ufm0a"), SubResource("Resource_ukcfl")])
+Offset = Array[Vector2i]([Vector2i(0, 0), Vector2i(-1, 1), Vector2i(0, 1), Vector2i(-1, 2), Vector2i(0, 2), Vector2i(1, 2), Vector2i(-1, 3), Vector2i(0, 3)])
+MoveTimes = 1
+WaitTurn = 0

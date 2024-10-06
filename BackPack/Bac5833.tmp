@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm7884emwnp6s"]
+
+[ext_resource type="Script" path="res://BackPack/BackPack.gd" id="1_eipfg"]
+
+[node name="BackPack" type="Node2D"]
+position = Vector2(980, 578)
+script = ExtResource("1_eipfg")
+InitPlayerPawn = Array[int]([1, 0, 0, 0, 2, 0])

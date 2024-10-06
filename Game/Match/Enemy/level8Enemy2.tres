@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyGroup" load_steps=7 format=3 uid="uid://ddglu4rscmrem"]
+
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="1_braph"]
+[ext_resource type="Resource" uid="uid://beiygowktrxs" path="res://Pawn/PawnResource/Enemy/FlyKing.res" id="2_53klr"]
+[ext_resource type="Script" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_pq0b8"]
+[ext_resource type="Resource" uid="uid://bu4xk60b4wksl" path="res://Pawn/PawnResource/Enemy/Butterfly.res" id="3_66e28"]
+[ext_resource type="Resource" uid="uid://oth88j0wwcwq" path="res://Pawn/PawnResource/Enemy/FlyBomber.res" id="4_2acm8"]
+[ext_resource type="Resource" uid="uid://bn86dexr08qbi" path="res://Pawn/PawnResource/Enemy/FlyCandle.res" id="5_ny7jj"]
+
+[resource]
+script = ExtResource("2_pq0b8")
+AddTurn = 0
+InitPosition = Vector2i(0, 4)
+InitPawnList = Array[ExtResource("1_braph")]([ExtResource("2_53klr"), ExtResource("2_53klr"), ExtResource("3_66e28"), ExtResource("3_66e28"), ExtResource("4_2acm8"), ExtResource("4_2acm8"), ExtResource("5_ny7jj"), ExtResource("5_ny7jj")])
+Offset = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(1, 2), Vector2i(2, 2)])
+MoveTimes = 1
+WaitTurn = 0

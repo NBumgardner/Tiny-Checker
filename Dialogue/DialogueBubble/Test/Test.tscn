@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://slu12c5xibxt"]
+
+[ext_resource type="Script" path="res://Dialogue/DialogueBubble/Test/Texter.gd" id="1_301dy"]
+[ext_resource type="PackedScene" uid="uid://dsy2ucuqcfhdi" path="res://Dialogue/DialogueBubble/DialogueBubble.tscn" id="1_xjl3x"]
+
+[node name="Test" type="Node2D" node_paths=PackedStringArray("t")]
+script = ExtResource("1_301dy")
+t = NodePath("DialogueBubble")
+
+[node name="DialogueBubble" parent="." instance=ExtResource("1_xjl3x")]

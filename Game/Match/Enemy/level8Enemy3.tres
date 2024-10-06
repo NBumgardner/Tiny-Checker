@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyGroup" load_steps=6 format=3 uid="uid://c5k3ytfi14hq3"]
+
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="1_bioq4"]
+[ext_resource type="Script" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_asema"]
+[ext_resource type="Resource" uid="uid://beiygowktrxs" path="res://Pawn/PawnResource/Enemy/FlyKing.res" id="2_h77bs"]
+[ext_resource type="Resource" uid="uid://bteuqfqh4w6qf" path="res://Pawn/PawnResource/Enemy/EnemyKing.res" id="3_olb32"]
+[ext_resource type="Resource" uid="uid://cg8ch4t3bkndp" path="res://Pawn/PawnResource/Enemy/SpinePawn.tres" id="4_v3ii7"]
+
+[resource]
+script = ExtResource("2_asema")
+AddTurn = 0
+InitPosition = Vector2i(10, 4)
+InitPawnList = Array[ExtResource("1_bioq4")]([ExtResource("2_h77bs"), ExtResource("2_h77bs"), ExtResource("3_olb32"), ExtResource("3_olb32"), ExtResource("3_olb32"), ExtResource("3_olb32"), ExtResource("4_v3ii7"), ExtResource("4_v3ii7")])
+Offset = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(-1, 1), Vector2i(0, 1), Vector2i(1, 1), Vector2i(0, 2), Vector2i(1, 2)])
+MoveTimes = 1
+WaitTurn = 0

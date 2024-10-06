@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://7p6dbpqncavq"]
+
+[ext_resource type="Script" path="res://Game/Match/Test/test.gd" id="1_wnsfp"]
+[ext_resource type="Script" path="res://Game/Match/MatchData.gd" id="2_csuio"]
+[ext_resource type="Script" path="res://Game/Match/Match.gd" id="2_nclky"]
+[ext_resource type="PackedScene" uid="uid://cm7884emwnp6s" path="res://BackPack/BackPack.tscn" id="4_w1gl8"]
+
+[sub_resource type="Resource" id="Resource_uj0ok"]
+script = ExtResource("2_csuio")
+BoardID = 0
+
+[node name="Test" type="Node2D" node_paths=PackedStringArray("m", "b")]
+script = ExtResource("1_wnsfp")
+t = SubResource("Resource_uj0ok")
+m = NodePath("Node")
+b = NodePath("BackPack")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("2_nclky")
+MoveColor = Color(1, 0.913725, 0.470588, 1)
+
+[node name="BackPack" parent="." instance=ExtResource("4_w1gl8")]
+position = Vector2(983, 1261)

@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://dg1tov4aig2f4"]
+
+[ext_resource type="Script" path="res://Dialogue/TextBox/TextBox.gd" id="1_84eti"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="2_xsu81"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextData.gd" id="3_5wnrd"]
+
+[sub_resource type="Resource" id="Resource_twwvl"]
+resource_local_to_scene = true
+script = ExtResource("2_xsu81")
+Size = 1.0
+CharDistant = 0.1
+LineDistant = 55.0
+LineOffset = 0.0
+TextColor = Color(1, 1, 1, 1)
+Speed = 1.0
+FontName = ""
+AnimeName = ""
+SountSetName = ""
+CycleLength = 300.0
+
+[sub_resource type="Resource" id="Resource_e6wp5"]
+resource_local_to_scene = true
+script = ExtResource("3_5wnrd")
+DefaultHead = SubResource("Resource_twwvl")
+Text = "asdasdasd
+"
+HeadList = Array[ExtResource("2_xsu81")]([])
+
+[node name="QTextPrefab" type="Node2D"]
+script = ExtResource("1_84eti")
+Data = SubResource("Resource_e6wp5")

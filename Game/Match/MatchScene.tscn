@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxm80dnq67htt"]
+
+[ext_resource type="Script" path="res://Game/Match/Match.gd" id="1_d20x8"]
+[ext_resource type="PackedScene" uid="uid://dgxp17pvwt08s" path="res://_UI/Counter/Counter.tscn" id="2_qk256"]
+[ext_resource type="PackedScene" uid="uid://bqdbmcla8jjfr" path="res://_UI/Score/Score.tscn" id="3_ksy4s"]
+[ext_resource type="Texture2D" uid="uid://ckjyvihi0vw4c" path="res://Texture/Data/Match/Win.png" id="4_hw3a1"]
+[ext_resource type="Texture2D" uid="uid://ertujxpcmqh0" path="res://Texture/Data/Match/Lose.png" id="5_d7ko8"]
+[ext_resource type="Script" path="res://_UI/Checker/CheckerContainer.gd" id="6_0fmam"]
+
+[node name="MatchScene" type="Node2D" node_paths=PackedStringArray("ScoreCounter", "TurnCounter", "Checker", "WinSprite", "LoseSprite")]
+script = ExtResource("1_d20x8")
+MoveColor = Color(1, 0.858824, 0.258824, 1)
+ScoreCounter = NodePath("Score")
+TurnCounter = NodePath("Counter")
+Checker = NodePath("Node2D")
+WinSprite = NodePath("Sprite2D")
+LoseSprite = NodePath("Sprite2D2")
+
+[node name="Counter" parent="." instance=ExtResource("2_qk256")]
+position = Vector2(245, 1208)
+
+[node name="Score" parent="." instance=ExtResource("3_ksy4s")]
+position = Vector2(954, -88)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 17
+position = Vector2(426, 888)
+texture = ExtResource("4_hw3a1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 17
+position = Vector2(426, 888)
+texture = ExtResource("5_d7ko8")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(1432, 538)
+script = ExtResource("6_0fmam")
+Globel = false

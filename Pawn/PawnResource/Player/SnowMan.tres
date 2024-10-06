@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="PawnData" load_steps=12 format=3 uid="uid://qoyw6ilf1r0v"]
+
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_rh46m"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_me811"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/FrozenJumpedPiece.gd" id="3_5lxpt"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_wi8ev"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_8ya6b"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_4w6ax"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_fvd73"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_ui6vq"]
+
+[sub_resource type="Resource" id="Resource_1n6qd"]
+script = ExtResource("3_5lxpt")
+Discrabe = "Frozen jumped piece"
+
+[sub_resource type="Resource" id="Resource_ea5ex"]
+script = ExtResource("6_fvd73")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_3qa7r"]
+script = ExtResource("6_fvd73")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 20.0
+TopRadin = 20.0
+CurveRadin = 0.0
+height = 45.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = "PawnSnowManBack"
+TextureLine = Array[String](["PawnSnowManLine"])
+Colors = Array[Color]([])
+
+[resource]
+script = ExtResource("7_ui6vq")
+PartsData = Array[ExtResource("6_fvd73")]([SubResource("Resource_ea5ex"), SubResource("Resource_3qa7r")])
+Value = 1
+Type = 0
+Flag = 0
+DisPlayName = "Snow Man"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 1
+MaxHP = 4
+InitSheild = 0
+CanJump = true
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("5_4w6ax")]([])
+AfterTakeDamage = Array[ExtResource("3_wi8ev")]([])
+AfterMove = Array[ExtResource("2_me811")]([SubResource("Resource_1n6qd")])
+AfterDeath = Array[ExtResource("1_rh46m")]([])
+AfterTurn = Array[ExtResource("4_8ya6b")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = true

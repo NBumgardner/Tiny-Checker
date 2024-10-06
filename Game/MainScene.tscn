@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://ceya17p0pscsw"]
+
+[ext_resource type="PackedScene" uid="uid://bxm80dnq67htt" path="res://Game/Match/MatchScene.tscn" id="1_pmppj"]
+[ext_resource type="Script" path="res://Game/Game.gd" id="1_sdluo"]
+[ext_resource type="Resource" uid="uid://cwep7vq0dxjtu" path="res://Game/GameData.res" id="2_tg04x"]
+[ext_resource type="PackedScene" uid="uid://b7k1sfodp113n" path="res://_UI/RoundShower/RoundShower.tscn" id="3_8o4rr"]
+[ext_resource type="PackedScene" uid="uid://bed6kg3s3rda4" path="res://Game/Map/Map.tscn" id="4_gbt7i"]
+
+[node name="MainScene" type="Node2D" node_paths=PackedStringArray("MainMatch", "MainMap", "MatchShower", "MapShower")]
+script = ExtResource("1_sdluo")
+Data = ExtResource("2_tg04x")
+MainMatch = NodePath("Match/SubViewportContainer/SubViewport/MatchScene")
+MainMap = NodePath("Map/SubViewportContainer/SubViewport/Map")
+MatchShower = NodePath("Match")
+MapShower = NodePath("Map")
+
+[node name="Map" parent="." instance=ExtResource("3_8o4rr")]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Map"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="Map/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="Map" parent="Map/SubViewportContainer/SubViewport" node_paths=PackedStringArray("MainGame") instance=ExtResource("4_gbt7i")]
+MainGame = NodePath("../../../..")
+
+[node name="Match" parent="." instance=ExtResource("3_8o4rr")]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Match"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="Match/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="MatchScene" parent="Match/SubViewportContainer/SubViewport" node_paths=PackedStringArray("MainGame") instance=ExtResource("1_pmppj")]
+WinColor = Color(0.994301, 0.830387, 0.455479, 1)
+LostColor = Color(1, 0.603046, 0.634485, 1)
+MainGame = NodePath("../../../..")

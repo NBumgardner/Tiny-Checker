@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3 uid="uid://c7uqj5ge2tsqx"]
+
+[ext_resource type="Script" path="res://Board/Test/BoardTest.gd" id="1_j2b0c"]
+[ext_resource type="Script" path="res://Board/Board.gd" id="2_ynqgo"]
+[ext_resource type="Script" path="res://Board/BoardLineData.gd" id="3_nfnfi"]
+[ext_resource type="Script" path="res://Board/BoardData.gd" id="3_ykhed"]
+
+[sub_resource type="Resource" id="Resource_b232w"]
+script = ExtResource("3_nfnfi")
+line = Array[int]([2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_8kai2"]
+script = ExtResource("3_nfnfi")
+line = Array[int]([1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_602st"]
+script = ExtResource("3_ykhed")
+Data = Array[ExtResource("3_nfnfi")]([SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w")])
+PlayerBoardStartPosition = Vector2i(0, 0)
+
+[node name="BoardTest" type="Node2D" node_paths=PackedStringArray("b")]
+script = ExtResource("1_j2b0c")
+b = NodePath("Node2D")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(215, 188)
+script = ExtResource("2_ynqgo")
+Data = SubResource("Resource_602st")

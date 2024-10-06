@@ -1,0 +1,40 @@
+[gd_scene load_steps=26 format=3 uid="uid://d3aow32mxkb2b"]
+
+[ext_resource type="Script" path="res://Pawn/PawnManager.gd" id="1_b272o"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="2_63j6t"]
+[ext_resource type="Resource" uid="uid://c0admrjwwrc5y" path="res://Pawn/PawnResource/Player/PlayerPawn.res" id="3_ctx36"]
+[ext_resource type="Resource" uid="uid://cfdcjikgollht" path="res://Pawn/PawnResource/Player/Egg.tres" id="4_8owak"]
+[ext_resource type="Resource" uid="uid://62d22v5b27dp" path="res://Pawn/PawnResource/Player/Hedgehog.tres" id="5_iyrao"]
+[ext_resource type="Resource" uid="uid://elojeskattjn" path="res://Pawn/PawnResource/Player/Kangaroo.tres" id="6_kwp45"]
+[ext_resource type="Resource" uid="uid://dxc747osmmkoa" path="res://Pawn/PawnResource/Player/Mole.tres" id="7_hre0k"]
+[ext_resource type="Resource" uid="uid://k4yh1w7y2y50" path="res://Pawn/PawnResource/Nutrial/Dam.tres" id="7_u4uah"]
+[ext_resource type="Resource" uid="uid://7udhw32vi1lb" path="res://Pawn/PawnResource/Player/Papper.tres" id="11_cpgjx"]
+[ext_resource type="Resource" uid="uid://cirmxmajxmvy" path="res://Pawn/PawnResource/Player/Rook.res" id="11_iu64i"]
+[ext_resource type="Resource" uid="uid://qoyw6ilf1r0v" path="res://Pawn/PawnResource/Player/SnowMan.tres" id="11_ovi10"]
+[ext_resource type="Resource" uid="uid://v6r8hydabu2a" path="res://Pawn/PawnResource/Player/SnowGlobe.res" id="12_0pbrl"]
+[ext_resource type="Resource" uid="uid://tcwyd7q7s64q" path="res://Pawn/PawnResource/Player/ShotGunKing.tres" id="12_ymswy"]
+[ext_resource type="Resource" uid="uid://cuj1b1yaj7t1k" path="res://Pawn/PawnResource/Nutrial/BigStone.res" id="13_bwqks"]
+[ext_resource type="Resource" uid="uid://bhhnv4h7bkp0e" path="res://Pawn/PawnResource/Nutrial/Gold.res" id="14_iera4"]
+[ext_resource type="Resource" uid="uid://dbtib5aptd2re" path="res://Pawn/PawnResource/Nutrial/grass.res" id="15_a83u6"]
+[ext_resource type="Resource" uid="uid://dmpsju158i4ra" path="res://Pawn/PawnResource/Nutrial/Stone.res" id="16_l2mp6"]
+[ext_resource type="Resource" uid="uid://d3e3qnppt3joj" path="res://Pawn/PawnResource/Nutrial/Stump.res" id="17_4miuo"]
+[ext_resource type="Resource" uid="uid://cvt5tfubya40k" path="res://Pawn/PawnResource/Nutrial/Treasure.res" id="18_a5qnn"]
+[ext_resource type="Resource" uid="uid://ds6042l4qjlkj" path="res://Pawn/PawnResource/Player/Sparrow.tres" id="20_72f6f"]
+[ext_resource type="Resource" uid="uid://bvp4djm887x8c" path="res://Pawn/PawnResource/Player/Seagull.tres" id="21_0mjub"]
+[ext_resource type="Resource" uid="uid://ckfbk7ib2vop6" path="res://Pawn/PawnResource/Player/Raven.tres" id="22_25eg2"]
+[ext_resource type="Resource" uid="uid://sxcob71pve4m" path="res://Pawn/PawnResource/Player/TinyKangaroo.tres" id="23_dtyrk"]
+[ext_resource type="Resource" uid="uid://dq44chtf537bb" path="res://Pawn/PawnResource/Nutrial/Dirt.tres" id="24_p7amu"]
+
+[sub_resource type="Curve" id="Curve_gb5iw"]
+_data = [Vector2(0, 0), 0.0, 0.259382, 0, 0, Vector2(0.499268, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.322196, 0.0, 0, 0]
+point_count = 3
+
+[node name="PawnManager" type="Node"]
+script = ExtResource("1_b272o")
+PlayerPawns = Array[ExtResource("2_63j6t")]([ExtResource("3_ctx36"), ExtResource("4_8owak"), ExtResource("5_iyrao"), ExtResource("6_kwp45"), ExtResource("7_hre0k"), ExtResource("22_25eg2"), ExtResource("12_0pbrl"), ExtResource("11_iu64i"), ExtResource("11_cpgjx"), ExtResource("12_ymswy")])
+PawnsInDic = Array[ExtResource("2_63j6t")]([ExtResource("7_u4uah"), ExtResource("13_bwqks"), ExtResource("14_iera4"), ExtResource("15_a83u6"), ExtResource("16_l2mp6"), ExtResource("17_4miuo"), ExtResource("18_a5qnn"), ExtResource("11_ovi10"), ExtResource("20_72f6f"), ExtResource("21_0mjub"), ExtResource("22_25eg2"), ExtResource("23_dtyrk"), ExtResource("24_p7amu")])
+DefaultJumpHoverColor = Color(1, 0.40161, 0.513757, 1)
+DefaultMoveHoverColor = Color(1, 0.879344, 0.488505, 1)
+DefaultPushHoverColor = Color(0.729297, 1, 0.471117, 1)
+DefaultOffendHoverColor = Color(1, 0.503333, 0.885783, 1)
+WubbleCurve = SubResource("Curve_gb5iw")

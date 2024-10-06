@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dojfc8q3hang8"]
+
+[ext_resource type="Texture2D" uid="uid://bc7l1dtvedtja" path="res://icon.svg" id="1_kjvp5"]
+[ext_resource type="Script" path="res://Font/RenderTest/MoveS.gd" id="2_ym0tb"]
+
+[node name="SpriteItem" type="Sprite2D"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_kjvp5")
+region_enabled = true
+region_rect = Rect2(0, 0, 128, 128)
+script = ExtResource("2_ym0tb")

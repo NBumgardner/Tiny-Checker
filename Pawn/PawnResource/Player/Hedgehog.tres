@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="PawnData" load_steps=12 format=3 uid="uid://62d22v5b27dp"]
+
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_iymqg"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_bkwu6"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_vuh4v"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_ldy0n"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/DealDamagearoundAfterTurn.gd" id="5_3kvdm"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_pl2ch"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_j7mci"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_a1a7j"]
+
+[sub_resource type="Resource" id="Resource_8d30q"]
+script = ExtResource("5_3kvdm")
+Discrabe = "Deal 1 damage to enemy pieces around
+at the end of turn"
+
+[sub_resource type="Resource" id="Resource_jaxq3"]
+script = ExtResource("6_j7mci")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_qimx7"]
+script = ExtResource("6_j7mci")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 40.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = "PawnHedgehogBack"
+TextureLine = Array[String](["PawnHedgehogLine"])
+Colors = Array[Color]([])
+
+[resource]
+script = ExtResource("7_a1a7j")
+PartsData = Array[ExtResource("6_j7mci")]([SubResource("Resource_jaxq3"), SubResource("Resource_qimx7")])
+Value = 1
+Type = 0
+Flag = 0
+DisPlayName = "Hedgehog"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 2
+MaxHP = 3
+InitSheild = 0
+CanJump = true
+CanWalk = true
+CanOffend = true
+CanPush = false
+MoveAbility = Array[ExtResource("5_pl2ch")]([])
+AfterTakeDamage = Array[ExtResource("3_vuh4v")]([])
+AfterMove = Array[ExtResource("2_bkwu6")]([])
+AfterDeath = Array[ExtResource("1_iymqg")]([])
+AfterTurn = Array[ExtResource("4_ldy0n")]([SubResource("Resource_8d30q")])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false

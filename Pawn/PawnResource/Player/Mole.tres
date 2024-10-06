@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="PawnData" load_steps=12 format=3 uid="uid://dxc747osmmkoa"]
+
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_ly87c"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_nynfg"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/GenDirtAfterMove.gd" id="3_0jcnm"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_13y5k"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_4wxyc"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_akpyk"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_kjpt8"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_aa2vb"]
+
+[sub_resource type="Resource" id="Resource_5pco1"]
+script = ExtResource("3_0jcnm")
+Discrabe = "Gen 1  dirt in fornt
+after move"
+
+[sub_resource type="Resource" id="Resource_871hv"]
+script = ExtResource("6_kjpt8")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_kuuyo"]
+script = ExtResource("6_kjpt8")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 40.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = "PawnMoleBack"
+TextureLine = Array[String](["PawnMoleLine"])
+Colors = Array[Color]([])
+
+[resource]
+script = ExtResource("7_aa2vb")
+PartsData = Array[ExtResource("6_kjpt8")]([SubResource("Resource_871hv"), SubResource("Resource_kuuyo")])
+Value = 2
+Type = 0
+Flag = 0
+DisPlayName = "Mole"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 2
+MaxHP = 5
+InitSheild = 0
+CanJump = true
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("5_akpyk")]([])
+AfterTakeDamage = Array[ExtResource("3_13y5k")]([])
+AfterMove = Array[ExtResource("2_nynfg")]([SubResource("Resource_5pco1")])
+AfterDeath = Array[ExtResource("1_ly87c")]([])
+AfterTurn = Array[ExtResource("4_4wxyc")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false

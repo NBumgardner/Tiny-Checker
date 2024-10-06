@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgxp17pvwt08s"]
+
+[ext_resource type="Script" path="res://_UI/Counter/GameCounter.gd" id="1_58jkb"]
+[ext_resource type="Texture2D" uid="uid://cqbf0243gav0u" path="res://Texture/Data/Counter/2.png" id="2_d43w7"]
+[ext_resource type="Texture2D" uid="uid://bc3vd8ql1f4cl" path="res://Texture/Data/Counter/3.png" id="3_7bhx6"]
+[ext_resource type="Texture2D" uid="uid://ghpv5tvko7ne" path="res://Texture/Data/Counter/1.png" id="4_1raps"]
+
+[node name="Counter" type="Node2D" node_paths=PackedStringArray("st", "sb")]
+position = Vector2(853, 572)
+script = ExtResource("1_58jkb")
+st = NodePath("Mask/Player")
+sb = NodePath("Mask/Opponent")
+PlayerTexture = ExtResource("2_d43w7")
+OppoenetTexture = ExtResource("3_7bhx6")
+
+[node name="Mask" type="Sprite2D" parent="."]
+clip_children = 1
+texture = ExtResource("2_d43w7")
+
+[node name="Opponent" type="Sprite2D" parent="Mask"]
+texture = ExtResource("3_7bhx6")
+
+[node name="Player" type="Sprite2D" parent="Mask"]
+texture = ExtResource("2_d43w7")
+
+[node name="Main" type="Sprite2D" parent="."]
+texture = ExtResource("4_1raps")

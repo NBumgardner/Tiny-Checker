@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyGroup" load_steps=3 format=3 uid="uid://hl7tw81kp7w5"]
+
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="1_ia8l8"]
+[ext_resource type="Script" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_7o16u"]
+
+[resource]
+script = ExtResource("2_7o16u")
+AddTurn = 0
+InitPosition = Vector2i(0, 0)
+InitPawnList = Array[ExtResource("1_ia8l8")]([])
+Offset = Array[Vector2i]([])
+MoveTimes = 1

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bitqk4eamvk0x"]
+
+[ext_resource type="Script" path="res://Animation/Test/BounceCounterTester.gd" id="1_ctgok"]
+
+[node name="Test" type="Node2D"]
+
+[node name="Line2D" type="Line2D" parent="."]
+width = 3.0
+script = ExtResource("1_ctgok")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3qsxmlainxcn"]
+
+[ext_resource type="Texture2D" uid="uid://bc7l1dtvedtja" path="res://icon.svg" id="1_roq3g"]
+[ext_resource type="Script" path="res://Font/RenderTest/MoveP.gd" id="2_djvcb"]
+
+[node name="PolygonItem" type="Polygon2D"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_roq3g")
+polygon = PackedVector2Array(64, 64, 64, -64, -64, -64, -64, 64)
+uv = PackedVector2Array(0, 128, 0, 0, 128, 0, 128, 128)
+script = ExtResource("2_djvcb")

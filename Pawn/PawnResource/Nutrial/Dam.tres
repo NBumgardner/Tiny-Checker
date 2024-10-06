@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="PawnData" load_steps=10 format=3 uid="uid://k4yh1w7y2y50"]
+
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_tl8gl"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_rnbvm"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_comms"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_u38ij"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_k6any"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_pj1qt"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_syeif"]
+
+[sub_resource type="Resource" id="Resource_ovht4"]
+script = ExtResource("6_pj1qt")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(0.786491, 0.493611, 0.356326, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_umipy"]
+script = ExtResource("6_pj1qt")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 20.0
+TopRadin = 20.0
+CurveRadin = 0.0
+height = 17.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(0.788235, 0.494118, 0.356863, 1)
+TextureBack = "PawnBeaverDamBack"
+TextureLine = Array[String](["PawnBeaverDamLine"])
+Colors = Array[Color]([])
+
+[resource]
+script = ExtResource("7_syeif")
+PartsData = Array[ExtResource("6_pj1qt")]([SubResource("Resource_ovht4"), SubResource("Resource_umipy")])
+Value = 0
+Type = 0
+Flag = 1
+DisPlayName = "Dam"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 0
+MaxHP = 1
+InitSheild = 0
+CanJump = false
+CanWalk = false
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("5_k6any")]([])
+AfterTakeDamage = Array[ExtResource("3_comms")]([])
+AfterMove = Array[ExtResource("2_rnbvm")]([])
+AfterDeath = Array[ExtResource("1_tl8gl")]([])
+AfterTurn = Array[ExtResource("4_u38ij")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm7884emwnp6s"]
+
+[ext_resource type="Script" path="res://BackPack/BackPack.gd" id="1_eipfg"]
+[ext_resource type="Texture2D" uid="uid://dkg0qrag33f4b" path="res://Texture/Data/Bag/Body.png" id="2_47dwe"]
+[ext_resource type="Texture2D" uid="uid://dltfxkg4wmqg6" path="res://Texture/Data/Bag/CC.png" id="3_f5n35"]
+[ext_resource type="Texture2D" uid="uid://c7w8h7yjh6gum" path="res://Texture/Data/Bag/Cover.png" id="3_u077w"]
+
+[node name="BackPack" type="Node2D" node_paths=PackedStringArray("Cover")]
+position = Vector2(984, 747)
+script = ExtResource("1_eipfg")
+InitPlayerPawn = Array[int]([0, 0, 0, 0, 0, 0])
+Cover = NodePath("Sprite2D2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-21, -23)
+texture = ExtResource("2_47dwe")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(-21, -23)
+texture = ExtResource("3_f5n35")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(-21, -23)
+texture = ExtResource("3_u077w")

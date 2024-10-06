@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://7p6dbpqncavq"]
+
+[ext_resource type="Script" path="res://Game/Match/Test/test.gd" id="1_wnsfp"]
+[ext_resource type="Resource" uid="uid://cwep7vq0dxjtu" path="res://Game/GameData.res" id="2_fkhyd"]
+[ext_resource type="PackedScene" uid="uid://bxm80dnq67htt" path="res://Game/Match/MatchScene.tscn" id="3_cfamd"]
+[ext_resource type="PackedScene" uid="uid://cm7884emwnp6s" path="res://BackPack/BackPack.tscn" id="4_ox0b3"]
+
+[node name="Test" type="Node2D" node_paths=PackedStringArray("m", "b")]
+script = ExtResource("1_wnsfp")
+t = ExtResource("2_fkhyd")
+m = NodePath("MatchScene")
+b = NodePath("BackPack")
+
+[node name="MatchScene" parent="." instance=ExtResource("3_cfamd")]
+WinColor = Color(1, 0.860187, 0.565016, 1)
+LostColor = Color(1, 0.645418, 0.672613, 1)
+
+[node name="BackPack" parent="." instance=ExtResource("4_ox0b3")]

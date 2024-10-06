@@ -1,0 +1,449 @@
+[gd_scene load_steps=104 format=3 uid="uid://c4e4dwaajohjp"]
+
+[ext_resource type="Script" path="res://Board/BoardManager.gd" id="1_kmdjb"]
+[ext_resource type="Script" path="res://Board/BoardData.gd" id="2_7ox55"]
+[ext_resource type="Script" path="res://Board/BoardBlockData.gd" id="2_osaxw"]
+[ext_resource type="Script" path="res://Board/BoardLineData.gd" id="3_u243n"]
+
+[sub_resource type="Resource" id="Resource_42ao6"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, -1, -1, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_hlude"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, -1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_b232w"]
+script = ExtResource("3_u243n")
+line = Array[int]([2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_8kai2"]
+script = ExtResource("3_u243n")
+line = Array[int]([1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_44nh7"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_42ao6"), SubResource("Resource_hlude"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w"), SubResource("Resource_8kai2"), SubResource("Resource_b232w")])
+PlayerBlockStart = Vector2i(6, 6)
+
+[sub_resource type="Resource" id="Resource_jix2q"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, -1])
+
+[sub_resource type="Resource" id="Resource_kyf6v"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, -1])
+
+[sub_resource type="Resource" id="Resource_csidj"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_q0qdw"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_gxlsh"]
+script = ExtResource("3_u243n")
+line = Array[int]([1, 1, 1, 1, 1])
+
+[sub_resource type="Resource" id="Resource_p6eqy"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_jix2q"), SubResource("Resource_kyf6v"), SubResource("Resource_csidj"), SubResource("Resource_q0qdw"), SubResource("Resource_gxlsh")])
+PlayerBlockStart = Vector2i(0, 5)
+
+[sub_resource type="Resource" id="Resource_68bpb"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, -1])
+
+[sub_resource type="Resource" id="Resource_h7cc4"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, -1, -1])
+
+[sub_resource type="Resource" id="Resource_uml3x"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_kd526"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_5snk5"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_d0qhk"]
+script = ExtResource("3_u243n")
+line = Array[int]([2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_dfhal"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_rlflb"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_68bpb"), SubResource("Resource_h7cc4"), SubResource("Resource_uml3x"), SubResource("Resource_kd526"), SubResource("Resource_5snk5"), SubResource("Resource_d0qhk"), SubResource("Resource_dfhal")])
+PlayerBlockStart = Vector2i(1, 7)
+
+[sub_resource type="Resource" id="Resource_d87vs"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, -1])
+
+[sub_resource type="Resource" id="Resource_b0swh"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, -1, -1])
+
+[sub_resource type="Resource" id="Resource_pvyuv"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_ej02c"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_ey77y"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_j1u48"]
+script = ExtResource("3_u243n")
+line = Array[int]([2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_hsxl6"]
+script = ExtResource("3_u243n")
+line = Array[int]([3, 2, 1, 3, 2, 1, 3])
+
+[sub_resource type="Resource" id="Resource_3le1q"]
+script = ExtResource("3_u243n")
+line = Array[int]([2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_mxgaj"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_dc16v"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_d87vs"), SubResource("Resource_b0swh"), SubResource("Resource_pvyuv"), SubResource("Resource_ej02c"), SubResource("Resource_ey77y"), SubResource("Resource_j1u48"), SubResource("Resource_hsxl6"), SubResource("Resource_3le1q"), SubResource("Resource_mxgaj")])
+PlayerBlockStart = Vector2i(1, 9)
+
+[sub_resource type="Resource" id="Resource_k1ifd"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, -1])
+
+[sub_resource type="Resource" id="Resource_kajac"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, -1, -1])
+
+[sub_resource type="Resource" id="Resource_j3hqy"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_l65v8"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, -1, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_iufpu"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_bybhk"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_sx4sg"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 3, 2, 1, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_0qfjj"]
+script = ExtResource("3_u243n")
+line = Array[int]([1, 2, 3, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_h26i2"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 3, 1, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_6tx47"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 2, 0, 0, 0, 0, 1])
+
+[sub_resource type="Resource" id="Resource_11q7f"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 1, 0, 0, 0, 2])
+
+[sub_resource type="Resource" id="Resource_ktlnw"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 3, 0, 0, 2])
+
+[sub_resource type="Resource" id="Resource_58vrk"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 2, 0, 1])
+
+[sub_resource type="Resource" id="Resource_fjdpa"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_k1ifd"), SubResource("Resource_kajac"), SubResource("Resource_j3hqy"), SubResource("Resource_l65v8"), SubResource("Resource_iufpu"), SubResource("Resource_bybhk"), SubResource("Resource_sx4sg"), SubResource("Resource_0qfjj"), SubResource("Resource_h26i2"), SubResource("Resource_6tx47"), SubResource("Resource_11q7f"), SubResource("Resource_ktlnw"), SubResource("Resource_58vrk")])
+PlayerBlockStart = Vector2i(2, 9)
+
+[sub_resource type="Resource" id="Resource_uutnl"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, -1, 0, 0, 0, 0, 0, -1])
+
+[sub_resource type="Resource" id="Resource_ax8tc"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, -1, 0, 0, 0, 0, -1, -1])
+
+[sub_resource type="Resource" id="Resource_iqpl6"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, -1, -1, 0, 0, 0, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_tl1v4"]
+script = ExtResource("3_u243n")
+line = Array[int]([1, 2, 3, 1, 0, 0, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_p4o1q"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 3, 1, 2, 3, 0, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_xahc5"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 2, 3, 1, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_p2gru"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_l6rod"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 3, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_e3xpw"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_qkljr"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 1, 0, 0, 1])
+
+[sub_resource type="Resource" id="Resource_keica"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 3, 0, 2])
+
+[sub_resource type="Resource" id="Resource_tdses"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_uutnl"), SubResource("Resource_ax8tc"), SubResource("Resource_iqpl6"), SubResource("Resource_tl1v4"), SubResource("Resource_p4o1q"), SubResource("Resource_xahc5"), SubResource("Resource_p2gru"), SubResource("Resource_l6rod"), SubResource("Resource_e3xpw"), SubResource("Resource_qkljr"), SubResource("Resource_keica")])
+PlayerBlockStart = Vector2i(3, 9)
+
+[sub_resource type="Resource" id="Resource_qsffq"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, -1, 1, 2, 3, 1, 2, 3, 1, 2, 3, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_nludk"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_7la8j"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, -1])
+
+[sub_resource type="Resource" id="Resource_cfeyo"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_2jvhu"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_uyknk"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_qsffq"), SubResource("Resource_nludk"), SubResource("Resource_7la8j"), SubResource("Resource_cfeyo"), SubResource("Resource_2jvhu")])
+PlayerBlockStart = Vector2i(5, 1)
+
+[sub_resource type="Resource" id="Resource_omx8e"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 0, 0, -1])
+
+[sub_resource type="Resource" id="Resource_rlm60"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 0, -1, -1])
+
+[sub_resource type="Resource" id="Resource_t0at5"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 0, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_gdoj5"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_igqbd"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, -1, 1, 2, 3, 1, 2, 3, 1, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_o2aqy"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, 2, 3, 1, 2, 3, 1, 2, 3, -1, -1])
+
+[sub_resource type="Resource" id="Resource_sg1r5"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, 3, 1, 2, 3, 1, 2, 3, 1, 2, -1])
+
+[sub_resource type="Resource" id="Resource_6nc2m"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_q3t1o"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 3, 1, 2, 3, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_t75vs"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 2, 3, 1, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_i50lw"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_u8avo"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 3, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_gf86g"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_qnwoi"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_omx8e"), SubResource("Resource_rlm60"), SubResource("Resource_t0at5"), SubResource("Resource_gdoj5"), SubResource("Resource_igqbd"), SubResource("Resource_o2aqy"), SubResource("Resource_sg1r5"), SubResource("Resource_6nc2m"), SubResource("Resource_q3t1o"), SubResource("Resource_t75vs"), SubResource("Resource_i50lw"), SubResource("Resource_u8avo"), SubResource("Resource_gf86g")])
+PlayerBlockStart = Vector2i(4, 9)
+
+[sub_resource type="Resource" id="Resource_net6a"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, -1, 1, 2, 3, 1, 2, 3, 1, 2, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_6hvt4"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, 2, 3, 1, 2, 3, 1, 2, 3, 1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_u0xhr"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, -1])
+
+[sub_resource type="Resource" id="Resource_gm156"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_8xuqj"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, -1, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, -1])
+
+[sub_resource type="Resource" id="Resource_rhpbf"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, 2, 3, 1, 2, 3, 1, 2, 3, 1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_wa7tj"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, -1, 1, 2, 3, 1, 2, 3, 1, 2, -1, -1, -1])
+
+[sub_resource type="Resource" id="Resource_4uop0"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_net6a"), SubResource("Resource_6hvt4"), SubResource("Resource_u0xhr"), SubResource("Resource_gm156"), SubResource("Resource_8xuqj"), SubResource("Resource_rhpbf"), SubResource("Resource_wa7tj")])
+PlayerBlockStart = Vector2i(5, 2)
+
+[sub_resource type="Resource" id="Resource_3h3ug"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 0, 0, -1])
+
+[sub_resource type="Resource" id="Resource_8pdu4"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 0, -1, -1])
+
+[sub_resource type="Resource" id="Resource_x257b"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 0, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_8d4ri"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 0, 0, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_2lnjy"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, -1, 3, 1, 2, 3, 1, 2, 3, 1, 2, -1, -1])
+
+[sub_resource type="Resource" id="Resource_gwjgm"]
+script = ExtResource("3_u243n")
+line = Array[int]([-1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, -1])
+
+[sub_resource type="Resource" id="Resource_jhdpp"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3])
+
+[sub_resource type="Resource" id="Resource_lsgqp"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1])
+
+[sub_resource type="Resource" id="Resource_4dv7o"]
+script = ExtResource("3_u243n")
+line = Array[int]([0, 0, 3, 1, 2, 3, 1, 2, 3, 1, 2])
+
+[sub_resource type="Resource" id="Resource_fxthg"]
+script = ExtResource("2_7ox55")
+Data = Array[ExtResource("3_u243n")]([SubResource("Resource_3h3ug"), SubResource("Resource_8pdu4"), SubResource("Resource_x257b"), SubResource("Resource_8d4ri"), SubResource("Resource_2lnjy"), SubResource("Resource_gwjgm"), SubResource("Resource_jhdpp"), SubResource("Resource_lsgqp"), SubResource("Resource_4dv7o"), SubResource("Resource_lsgqp"), SubResource("Resource_jhdpp"), SubResource("Resource_gwjgm"), SubResource("Resource_2lnjy"), SubResource("Resource_8d4ri"), SubResource("Resource_x257b"), SubResource("Resource_8pdu4"), SubResource("Resource_3h3ug")])
+PlayerBlockStart = Vector2i(4, 7)
+
+[sub_resource type="Resource" id="Resource_lo3go"]
+script = ExtResource("2_osaxw")
+GenData = true
+MainColor = Color(0.0695142, 0.217139, 0.135635, 1)
+LineColor = Color(0.383159, 0.80512, 0.48114, 1)
+EdgeColor = Color(0, 0, 0, 1)
+height = 20
+TextureName = ""
+
+[sub_resource type="Resource" id="Resource_t8uco"]
+script = ExtResource("2_osaxw")
+GenData = true
+MainColor = Color(0.0214346, 0.0214346, 0.0214346, 1)
+LineColor = Color(0.683077, 0.683078, 0.683077, 1)
+EdgeColor = Color(0, 0, 0, 1)
+height = 20
+TextureName = ""
+
+[sub_resource type="Resource" id="Resource_vucfv"]
+script = ExtResource("2_osaxw")
+GenData = true
+MainColor = Color(0.103744, 0.103744, 0.103744, 1)
+LineColor = Color(0.843184, 0.843184, 0.843184, 1)
+EdgeColor = Color(0, 0, 0, 1)
+height = 20
+TextureName = ""
+
+[sub_resource type="Resource" id="Resource_dyagn"]
+script = ExtResource("2_osaxw")
+GenData = true
+MainColor = Color(0.270223, 0.270222, 0.270222, 1)
+LineColor = Color(0.934081, 0.93408, 0.93408, 1)
+EdgeColor = Color(0, 0, 0, 1)
+height = 20
+TextureName = ""
+
+[sub_resource type="Resource" id="Resource_137tv"]
+script = ExtResource("2_osaxw")
+GenData = true
+MainColor = Color(0.43134, 0.43134, 0.43134, 1)
+LineColor = Color(1, 1, 1, 1)
+EdgeColor = Color(0, 0, 0, 1)
+height = 20
+TextureName = ""
+
+[sub_resource type="Resource" id="Resource_jbh68"]
+script = ExtResource("2_osaxw")
+GenData = true
+MainColor = Color(0.345151, 0.109865, 0.11032, 1)
+LineColor = Color(0.942192, 0.587306, 0.592186, 1)
+EdgeColor = Color(0, 0, 0, 1)
+height = 20
+TextureName = ""
+
+[node name="BoardManager" type="Node"]
+script = ExtResource("1_kmdjb")
+BoardDatas = Array[ExtResource("2_7ox55")]([SubResource("Resource_44nh7"), SubResource("Resource_p6eqy"), SubResource("Resource_rlflb"), SubResource("Resource_dc16v"), SubResource("Resource_fjdpa"), SubResource("Resource_tdses"), SubResource("Resource_uyknk"), SubResource("Resource_qnwoi"), SubResource("Resource_4uop0"), SubResource("Resource_fxthg")])
+BoardBlockDatas = Array[ExtResource("2_osaxw")]([SubResource("Resource_lo3go"), SubResource("Resource_t8uco"), SubResource("Resource_vucfv"), SubResource("Resource_dyagn")])
+PlayerBoardBlockDatas = Array[ExtResource("2_osaxw")]([SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv"), SubResource("Resource_137tv")])
+EnemyBoardBlockDatas = Array[ExtResource("2_osaxw")]([SubResource("Resource_jbh68")])

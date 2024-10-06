@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PawnData" load_steps=12 format=3 uid="uid://dwgp5bfvvt64f"]
+
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_vn675"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_xqe6p"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_8ycu2"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_e4y2o"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_ujbdk"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_xtfqf"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_kdl6b"]
+
+[sub_resource type="Resource" id="Resource_cx4eu"]
+script = ExtResource("5_ujbdk")
+Type = 2
+MoveRange = 2
+HoverColor = Color(1, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_16tu8"]
+script = ExtResource("6_xtfqf")
+Name = ""
+PartType = 3
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 0.482994, 0.509379, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_kqun3"]
+script = ExtResource("6_xtfqf")
+Name = ""
+PartType = 2
+GenData = false
+BottonRadin = 18.0
+TopRadin = 8.0
+CurveRadin = -0.3
+height = 25.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 0.482353, 0.509804, 1)
+TextureBack = "PawnFlyPawnBack"
+TextureLine = Array[String](["PawnFlyPawnLine"])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_38roc"]
+script = ExtResource("6_xtfqf")
+Name = "Pawn"
+PartType = 0
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 0.482353, 0.509804, 1)
+TextureBack = "PawnRoundHeadBack"
+TextureLine = Array[String](["PawnRoundHeadLine"])
+Colors = Array[Color]([])
+
+[resource]
+script = ExtResource("7_kdl6b")
+PartsData = Array[ExtResource("6_xtfqf")]([SubResource("Resource_16tu8"), SubResource("Resource_kqun3"), SubResource("Resource_38roc")])
+Value = 1
+Type = 0
+Flag = 2
+DisPlayName = "Fly Pawn"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 1
+MaxHP = 3
+InitSheild = 0
+CanJump = true
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("5_ujbdk")]([SubResource("Resource_cx4eu")])
+AfterTakeDamage = Array[ExtResource("3_8ycu2")]([])
+AfterMove = Array[ExtResource("2_xqe6p")]([])
+AfterDeath = Array[ExtResource("1_vn675")]([])
+AfterTurn = Array[ExtResource("4_e4y2o")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false

@@ -1,0 +1,117 @@
+[gd_scene load_steps=39 format=3 uid="uid://jxa8t35bvuwt"]
+
+[ext_resource type="Script" path="res://Game/Map/Event/MapEventManager.gd" id="1_mp2rx"]
+[ext_resource type="Script" path="res://Game/Map/Event/Shop/ShopItemData.gd" id="2_uej1m"]
+[ext_resource type="Resource" uid="uid://deba62tyvhgdv" path="res://Pawn/PawnResource/Player/Bomber.res" id="3_sdbuf"]
+[ext_resource type="Resource" uid="uid://cd7m2775ff8o6" path="res://Pawn/PawnResource/Player/Beaver.res" id="4_0sbvf"]
+[ext_resource type="Resource" uid="uid://bvnu65tl87d6v" path="res://Pawn/PawnResource/Player/PlayerKing.res" id="4_j1vjp"]
+[ext_resource type="Resource" uid="uid://qoyw6ilf1r0v" path="res://Pawn/PawnResource/Player/SnowMan.tres" id="4_t2p05"]
+[ext_resource type="Resource" uid="uid://bg8a6wrluuvx3" path="res://Pawn/PawnResource/Player/Candle.res" id="5_c3xmx"]
+[ext_resource type="Resource" uid="uid://elojeskattjn" path="res://Pawn/PawnResource/Player/Kangaroo.tres" id="6_ajsdx"]
+[ext_resource type="Resource" uid="uid://dxc747osmmkoa" path="res://Pawn/PawnResource/Player/Mole.tres" id="7_0521p"]
+[ext_resource type="Resource" uid="uid://7udhw32vi1lb" path="res://Pawn/PawnResource/Player/Papper.tres" id="8_tccym"]
+[ext_resource type="Resource" uid="uid://ckfbk7ib2vop6" path="res://Pawn/PawnResource/Player/Raven.tres" id="9_mi3f6"]
+[ext_resource type="Resource" uid="uid://cirmxmajxmvy" path="res://Pawn/PawnResource/Player/Rook.res" id="10_fjd84"]
+[ext_resource type="Resource" uid="uid://bvp4djm887x8c" path="res://Pawn/PawnResource/Player/Seagull.tres" id="11_nn80c"]
+[ext_resource type="Resource" uid="uid://v6r8hydabu2a" path="res://Pawn/PawnResource/Player/SnowGlobe.res" id="12_22jtd"]
+[ext_resource type="Resource" uid="uid://ds6042l4qjlkj" path="res://Pawn/PawnResource/Player/Sparrow.tres" id="14_dglsc"]
+[ext_resource type="Resource" uid="uid://cfdcjikgollht" path="res://Pawn/PawnResource/Player/Egg.tres" id="16_6tk1w"]
+[ext_resource type="Resource" uid="uid://dk3rnlwjkjxrb" path="res://Pawn/PawnResource/Player/HeartStation.res" id="17_5kiad"]
+[ext_resource type="Resource" uid="uid://62d22v5b27dp" path="res://Pawn/PawnResource/Player/Hedgehog.tres" id="18_4hnun"]
+[ext_resource type="Resource" uid="uid://tcwyd7q7s64q" path="res://Pawn/PawnResource/Player/ShotGunKing.tres" id="19_kjmyr"]
+[ext_resource type="Resource" uid="uid://cdjq2cpvpb6pi" path="res://Pawn/PawnResource/Player/Totem1.res" id="20_e0dks"]
+
+[sub_resource type="Resource" id="Resource_lpiek"]
+script = ExtResource("2_uej1m")
+P = ExtResource("3_sdbuf")
+price = 40
+
+[sub_resource type="Resource" id="Resource_nt50i"]
+script = ExtResource("2_uej1m")
+P = ExtResource("4_0sbvf")
+price = 30
+
+[sub_resource type="Resource" id="Resource_kyslt"]
+script = ExtResource("2_uej1m")
+P = ExtResource("5_c3xmx")
+price = 35
+
+[sub_resource type="Resource" id="Resource_qnbv6"]
+script = ExtResource("2_uej1m")
+P = ExtResource("6_ajsdx")
+price = 50
+
+[sub_resource type="Resource" id="Resource_rap7g"]
+script = ExtResource("2_uej1m")
+P = ExtResource("7_0521p")
+price = 30
+
+[sub_resource type="Resource" id="Resource_dxidi"]
+script = ExtResource("2_uej1m")
+P = ExtResource("8_tccym")
+price = 30
+
+[sub_resource type="Resource" id="Resource_88pbg"]
+script = ExtResource("2_uej1m")
+P = ExtResource("9_mi3f6")
+price = 40
+
+[sub_resource type="Resource" id="Resource_t1lrd"]
+script = ExtResource("2_uej1m")
+P = ExtResource("10_fjd84")
+price = 50
+
+[sub_resource type="Resource" id="Resource_o1q34"]
+script = ExtResource("2_uej1m")
+P = ExtResource("11_nn80c")
+price = 40
+
+[sub_resource type="Resource" id="Resource_3mrdg"]
+script = ExtResource("2_uej1m")
+P = ExtResource("12_22jtd")
+price = 60
+
+[sub_resource type="Resource" id="Resource_woict"]
+script = ExtResource("2_uej1m")
+P = ExtResource("4_t2p05")
+price = 40
+
+[sub_resource type="Resource" id="Resource_8lcqm"]
+script = ExtResource("2_uej1m")
+P = ExtResource("14_dglsc")
+price = 50
+
+[sub_resource type="Resource" id="Resource_aa2vk"]
+script = ExtResource("2_uej1m")
+P = ExtResource("4_j1vjp")
+price = 90
+
+[sub_resource type="Resource" id="Resource_1ps5c"]
+script = ExtResource("2_uej1m")
+P = ExtResource("16_6tk1w")
+price = 60
+
+[sub_resource type="Resource" id="Resource_571xr"]
+script = ExtResource("2_uej1m")
+P = ExtResource("17_5kiad")
+price = 65
+
+[sub_resource type="Resource" id="Resource_sjrb3"]
+script = ExtResource("2_uej1m")
+P = ExtResource("18_4hnun")
+price = 90
+
+[sub_resource type="Resource" id="Resource_n6b41"]
+script = ExtResource("2_uej1m")
+P = ExtResource("19_kjmyr")
+price = 100
+
+[sub_resource type="Resource" id="Resource_ep36v"]
+script = ExtResource("2_uej1m")
+P = ExtResource("20_e0dks")
+price = 90
+
+[node name="MapEventManager" type="Node"]
+script = ExtResource("1_mp2rx")
+ShopNormalItem = Array[ExtResource("2_uej1m")]([SubResource("Resource_lpiek"), SubResource("Resource_nt50i"), SubResource("Resource_kyslt"), SubResource("Resource_qnbv6"), SubResource("Resource_rap7g"), SubResource("Resource_dxidi"), SubResource("Resource_88pbg"), SubResource("Resource_t1lrd"), SubResource("Resource_o1q34"), SubResource("Resource_3mrdg"), SubResource("Resource_woict"), SubResource("Resource_8lcqm")])
+ShopGreatItem = Array[ExtResource("2_uej1m")]([SubResource("Resource_aa2vk"), SubResource("Resource_1ps5c"), SubResource("Resource_571xr"), SubResource("Resource_sjrb3"), SubResource("Resource_n6b41"), SubResource("Resource_ep36v")])

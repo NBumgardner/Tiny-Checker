@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://bllkh66f8viu3"]
+
+[ext_resource type="Script" path="res://Dialogue/TextBox/TextBox.gd" id="1_dxc6o"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/Test/DialogurTestter.gd" id="1_jbp05"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="2_vdud0"]
+[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextData.gd" id="3_arc6g"]
+
+[sub_resource type="Resource" id="Resource_hwva1"]
+script = ExtResource("2_vdud0")
+Size = 1.0
+CharDistant = 0.1
+LineDistant = 55.0
+LineOffset = 0.0
+TextColor = Color(1, 1, 1, 1)
+Speed = 1.0
+FontName = ""
+AnimeName = ""
+SountSetName = ""
+CycleLength = 300.0
+
+[sub_resource type="Resource" id="Resource_mkek8"]
+script = ExtResource("2_vdud0")
+Size = 2.0
+CharDistant = 0.1
+LineDistant = 55.0
+LineOffset = 50.0
+TextColor = Color(0.997205, 0, 0, 1)
+Speed = 0.2
+FontName = ""
+AnimeName = "Random"
+SountSetName = ""
+CycleLength = 300.0
+
+[sub_resource type="Resource" id="Resource_7vk0q"]
+script = ExtResource("3_arc6g")
+DefaultHead = SubResource("Resource_hwva1")
+Text = "You Turn
+
+Opponents
+
+
+asdfoais-a.sd asd asa ?????a sd asd.a s  j  j  j
+d as.da sd a.!!!!8235252273iau5s hf8w7yiau
+sdhg23fa998q 9fi <0>auuhdbuas<> igduzsygc ujzhb
+alskdhlsgkdjalsdkgjldkgjladkgjladkfgjladkgjlsdkfj
+asdgjasgasdgasdgasdgsagdsgsdgsdgsdgsdggd
+gggggggggggggggggggggggggggggggggggg
+................................................................................."
+HeadList = Array[ExtResource("2_vdud0")]([SubResource("Resource_mkek8")])
+
+[node name="Test" type="Node2D" node_paths=PackedStringArray("C")]
+script = ExtResource("1_jbp05")
+C = NodePath("Node2D")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_dxc6o")
+Area = Rect2(40, 40, 1500, 500)
+Data = SubResource("Resource_7vk0q")
+TextSpritePoolNum = 350

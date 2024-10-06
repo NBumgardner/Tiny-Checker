@@ -1,0 +1,100 @@
+[gd_scene load_steps=25 format=3 uid="uid://buu26snoqiuhv"]
+
+[ext_resource type="Script" path="res://PropertyControler/PropertyControler.gd" id="1_am67a"]
+[ext_resource type="Script" path="res://PropertyControler/SetterNode/SetterNode.gd" id="2_0odl3"]
+[ext_resource type="Script" path="res://PropertyControler/InnerNode/InnerNode.gd" id="2_3s020"]
+[ext_resource type="Script" path="res://PropertyControler/GetterNode/GetterNode.gd" id="2_wtskr"]
+[ext_resource type="Script" path="res://PropertyControler/SetterNode/N2dPositionSetterNode.gd" id="3_22yk5"]
+[ext_resource type="Script" path="res://PropertyControler/InnerNode/Wire/V2Wire.gd" id="3_c1csn"]
+[ext_resource type="Script" path="res://PropertyControler/GetterNode/V2GetterNode.gd" id="6_tgeip"]
+[ext_resource type="Script" path="res://PropertyControler/InnerNode/Wire/BoolWire.gd" id="7_b4saf"]
+[ext_resource type="Script" path="res://PropertyControler/InnerNode/V2BounceNode.gd" id="7_f3dsd"]
+[ext_resource type="Script" path="res://PropertyControler/SetterNode/N2dScaleSetterNode.gd" id="9_qswqm"]
+
+[sub_resource type="Resource" id="Resource_cvhv7"]
+script = ExtResource("3_c1csn")
+Data = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ty2x6"]
+script = ExtResource("6_tgeip")
+Data = Vector2(800, 500)
+OutPut = SubResource("Resource_cvhv7")
+PropertyName = ""
+
+[sub_resource type="Resource" id="Resource_kewpq"]
+script = ExtResource("3_c1csn")
+Data = Vector2(1, 1)
+
+[sub_resource type="Resource" id="Resource_twoof"]
+script = ExtResource("6_tgeip")
+Data = Vector2(3, 3)
+OutPut = SubResource("Resource_kewpq")
+PropertyName = ""
+
+[sub_resource type="Resource" id="Resource_fhr2j"]
+script = ExtResource("3_c1csn")
+Data = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ausoj"]
+script = ExtResource("3_22yk5")
+TargetIndex = 0
+
+[sub_resource type="Resource" id="Resource_d1i65"]
+script = ExtResource("7_b4saf")
+Data = true
+
+[sub_resource type="Resource" id="Resource_k17nx"]
+script = ExtResource("3_c1csn")
+Data = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_t7rm5"]
+script = ExtResource("7_f3dsd")
+End = SubResource("Resource_cvhv7")
+Cur = SubResource("Resource_fhr2j")
+Vocility = SubResource("Resource_k17nx")
+Start = SubResource("Resource_d1i65")
+Speed = 1.0
+Decay = 1.0
+BounceRange = -1.0
+StartVocilty = Vector2(1, 1)
+Output = SubResource("Resource_ausoj")
+
+[sub_resource type="Resource" id="Resource_yuf64"]
+script = ExtResource("3_c1csn")
+Data = Vector2(1, 1)
+
+[sub_resource type="Resource" id="Resource_5el33"]
+script = ExtResource("9_qswqm")
+TargetIndex = 0
+
+[sub_resource type="Resource" id="Resource_cvowi"]
+script = ExtResource("7_b4saf")
+Data = false
+
+[sub_resource type="Resource" id="Resource_io7fv"]
+script = ExtResource("3_c1csn")
+Data = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_h3bdt"]
+script = ExtResource("7_f3dsd")
+End = SubResource("Resource_kewpq")
+Cur = SubResource("Resource_yuf64")
+Vocility = SubResource("Resource_io7fv")
+Start = SubResource("Resource_cvowi")
+Speed = 0.5
+Decay = 1.0
+BounceRange = -1.0
+StartVocilty = Vector2(0, 0)
+Output = SubResource("Resource_5el33")
+
+[node name="Test" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_am67a")
+Getters = Array[ExtResource("2_wtskr")]([SubResource("Resource_ty2x6"), SubResource("Resource_twoof")])
+Inners = Array[ExtResource("2_3s020")]([SubResource("Resource_t7rm5"), SubResource("Resource_h3bdt")])
+Setters = Array[ExtResource("2_0odl3")]([SubResource("Resource_ausoj"), SubResource("Resource_5el33")])
+
+[node name="Polygon2D" type="Polygon2D" parent="Node2D"]
+position = Vector2(565, 290)
+polygon = PackedVector2Array(-75, -4, 1, 67, 96, 8, 76, -63, -11, -60)

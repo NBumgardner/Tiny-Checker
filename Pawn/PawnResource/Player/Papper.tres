@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="PawnData" load_steps=12 format=3 uid="uid://7udhw32vi1lb"]
+
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_28b3j"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_gr6tb"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PushAroundAfterMove.gd" id="3_je010"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_kf758"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_hf86s"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_6f3m3"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_v7bl5"]
+[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_bp0h2"]
+
+[sub_resource type="Resource" id="Resource_mgme8"]
+script = ExtResource("3_je010")
+Discrabe = "Push away pieces around
+after move"
+
+[sub_resource type="Resource" id="Resource_dm7f0"]
+script = ExtResource("6_v7bl5")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_7reu2"]
+script = ExtResource("6_v7bl5")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 40.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = "PawnPaperBack"
+TextureLine = Array[String](["PawnPaperLine"])
+Colors = Array[Color]([])
+
+[resource]
+script = ExtResource("7_bp0h2")
+PartsData = Array[ExtResource("6_v7bl5")]([SubResource("Resource_dm7f0"), SubResource("Resource_7reu2")])
+Value = 1
+Type = 0
+Flag = 0
+DisPlayName = "Papper"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 2
+MaxHP = 4
+InitSheild = 0
+CanJump = true
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("5_6f3m3")]([])
+AfterTakeDamage = Array[ExtResource("3_kf758")]([])
+AfterMove = Array[ExtResource("2_gr6tb")]([SubResource("Resource_mgme8")])
+AfterDeath = Array[ExtResource("1_28b3j")]([])
+AfterTurn = Array[ExtResource("4_hf86s")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false
