@@ -1,4 +1,4 @@
-[gd_scene load_steps=155 format=3 uid="uid://dygqnox86sw7m"]
+[gd_scene load_steps=159 format=3 uid="uid://dygqnox86sw7m"]
 
 [ext_resource type="Script" path="res://Texture/TextureManager.gd" id="1_bm5nv"]
 [ext_resource type="Texture2D" uid="uid://4l6gvxll07p6" path="res://Texture/Data/Damage/1.png" id="2_d6bqq"]
@@ -154,6 +154,10 @@
 [ext_resource type="Texture2D" uid="uid://bcbvhaxlgybto" path="res://Texture/Data/Pawn/TallCandel/Line.png" id="152_ck4pf"]
 [ext_resource type="Texture2D" uid="uid://ccpqjb73c0dw5" path="res://Texture/Data/Pawn/TinyKangaroo/Back.png" id="153_ijaku"]
 [ext_resource type="Texture2D" uid="uid://43rmeinmgww2" path="res://Texture/Data/Pawn/TinyKangaroo/Line.png" id="154_ems8k"]
+[ext_resource type="Texture2D" uid="uid://cnw0jdn6lvm27" path="res://Texture/Data/INT/1.png" id="155_guk8r"]
+[ext_resource type="Texture2D" uid="uid://bv3e3ls3jn4ae" path="res://Texture/Data/INT/2.png" id="156_6v7sw"]
+[ext_resource type="Texture2D" uid="uid://di8qx1y7ppy4x" path="res://Texture/Data/INT/3.png" id="157_kw0b1"]
+[ext_resource type="Texture2D" uid="uid://v3achxr0qj0t" path="res://Texture/Data/INT/4.png" id="158_iu05b"]
 
 [node name="TextureManager" type="Node"]
 script = ExtResource("1_bm5nv")
@@ -346,6 +350,10 @@ _tex = {
 "FightIcon2": ExtResource("100_u1dir"),
 "FireP": ExtResource("19_4ox2n"),
 "HeartP": ExtResource("20_86ghm"),
+"INT1": ExtResource("155_guk8r"),
+"INT2": ExtResource("156_6v7sw"),
+"INT3": ExtResource("157_kw0b1"),
+"INT4": ExtResource("158_iu05b"),
 "IceBack": ExtResource("21_t0re6"),
 "IceLine": ExtResource("22_qf8fc"),
 "IcePB1": ExtResource("23_pp3bm"),

@@ -72,6 +72,8 @@ func TryAttact()->MatchEvent:
 		return null
 	if cp.isIced:
 		return null
+	if cp._boardCel ==null:
+		return null
 	var JumpDis:int = 0
 	for i in cp.MoveAbility:
 		if i.Type == PawnMoveAbility.MoveType.Jump:
@@ -97,6 +99,8 @@ func TryMoveToGoal()->MatchEvent:
 	if cp.AttackNum<=0:
 		return null
 	if cp.isIced:
+		return null
+	if cp._boardCel ==null:
 		return null
 	var FlyDis:int = 0
 	var WalkDis:int = 0

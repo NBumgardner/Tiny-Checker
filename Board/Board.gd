@@ -156,6 +156,8 @@ func GetCellInDriJumpRange(p:Pawn,dri:int,r:int)->Array[BoardCell]:
 	var res:Array[BoardCell]= []
 	if p==null:
 		return  res
+	if p._boardCell == null:
+		return res
 	for i in r:
 		var cell = GetCellInDri(p._boardCell.BoardPosition,dri,i+1)
 		if cell!=null and cell.PawnSlot!=null and cell.PawnSlot not in p.JumpedPawn:
