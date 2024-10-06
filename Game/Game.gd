@@ -38,6 +38,7 @@ func MatchEnd(m:Match):
 	
 func RestartGame():
 	MainMap.InitMap()
+	MainMap.Bag.ReStart()
 	GameStart()
 	
 func EndGame():
