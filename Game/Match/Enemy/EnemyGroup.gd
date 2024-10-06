@@ -72,7 +72,7 @@ func TryAttact()->MatchEvent:
 		return null
 	if cp.isIced:
 		return null
-	if cp._boardCel ==null:
+	if cp._boardCell ==null:
 		return null
 	var JumpDis:int = 0
 	for i in cp.MoveAbility:
@@ -100,7 +100,7 @@ func TryMoveToGoal()->MatchEvent:
 		return null
 	if cp.isIced:
 		return null
-	if cp._boardCel ==null:
+	if cp._boardCell ==null:
 		return null
 	var FlyDis:int = 0
 	var WalkDis:int = 0
