@@ -8,17 +8,17 @@
 [ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="6_rpfin"]
 [ext_resource type="Script" path="res://Pawn/PawnData.gd" id="7_o6138"]
 
-[sub_resource type="Resource" id="Resource_nuu5a"]
+[sub_resource type="Resource" id="Resource_x182i"]
 script = ExtResource("5_ddmlu")
 Type = 1
 MoveRange = 2
-HoverColor = Color(1, 1, 1, 1)
+HoverColor = Color(1, 0.4, 0.513726, 1)
 
-[sub_resource type="Resource" id="Resource_ym1s0"]
+[sub_resource type="Resource" id="Resource_rnapb"]
 script = ExtResource("5_ddmlu")
 Type = 2
 MoveRange = 2
-HoverColor = Color(1, 1, 1, 1)
+HoverColor = Color(0.541176, 0.752941, 1, 1)
 
 [sub_resource type="Resource" id="Resource_vxsby"]
 script = ExtResource("6_rpfin")
@@ -68,7 +68,7 @@ CanJump = false
 CanWalk = true
 CanOffend = false
 CanPush = false
-MoveAbility = Array[ExtResource("5_ddmlu")]([SubResource("Resource_nuu5a"), SubResource("Resource_ym1s0")])
+MoveAbility = Array[ExtResource("5_ddmlu")]([SubResource("Resource_x182i"), SubResource("Resource_rnapb")])
 AfterTakeDamage = Array[ExtResource("3_3p72t")]([])
 AfterMove = Array[ExtResource("2_kahs0")]([])
 AfterDeath = Array[ExtResource("1_frimf")]([])

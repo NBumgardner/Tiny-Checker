@@ -67,6 +67,8 @@ func _ready() -> void:
 	add_child(IconSprite)
 
 
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !IconBounce.Finish:

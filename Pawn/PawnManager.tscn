@@ -1,18 +1,23 @@
-[gd_scene load_steps=26 format=3 uid="uid://d3aow32mxkb2b"]
+[gd_scene load_steps=53 format=3 uid="uid://d3aow32mxkb2b"]
 
 [ext_resource type="Script" path="res://Pawn/PawnManager.gd" id="1_b272o"]
 [ext_resource type="Script" path="res://Pawn/PawnData.gd" id="2_63j6t"]
 [ext_resource type="Resource" uid="uid://c0admrjwwrc5y" path="res://Pawn/PawnResource/Player/PlayerPawn.res" id="3_ctx36"]
 [ext_resource type="Resource" uid="uid://cfdcjikgollht" path="res://Pawn/PawnResource/Player/Egg.tres" id="4_8owak"]
+[ext_resource type="Resource" uid="uid://cd7m2775ff8o6" path="res://Pawn/PawnResource/Player/Beaver.res" id="4_gjguw"]
+[ext_resource type="Resource" uid="uid://deba62tyvhgdv" path="res://Pawn/PawnResource/Player/Bomber.res" id="5_2fch1"]
 [ext_resource type="Resource" uid="uid://62d22v5b27dp" path="res://Pawn/PawnResource/Player/Hedgehog.tres" id="5_iyrao"]
 [ext_resource type="Resource" uid="uid://elojeskattjn" path="res://Pawn/PawnResource/Player/Kangaroo.tres" id="6_kwp45"]
+[ext_resource type="Resource" uid="uid://bg8a6wrluuvx3" path="res://Pawn/PawnResource/Player/Candle.res" id="6_r2tg4"]
 [ext_resource type="Resource" uid="uid://dxc747osmmkoa" path="res://Pawn/PawnResource/Player/Mole.tres" id="7_hre0k"]
 [ext_resource type="Resource" uid="uid://k4yh1w7y2y50" path="res://Pawn/PawnResource/Nutrial/Dam.tres" id="7_u4uah"]
+[ext_resource type="Resource" uid="uid://dk3rnlwjkjxrb" path="res://Pawn/PawnResource/Player/HeartStation.res" id="8_o8ryg"]
 [ext_resource type="Resource" uid="uid://7udhw32vi1lb" path="res://Pawn/PawnResource/Player/Papper.tres" id="11_cpgjx"]
 [ext_resource type="Resource" uid="uid://cirmxmajxmvy" path="res://Pawn/PawnResource/Player/Rook.res" id="11_iu64i"]
 [ext_resource type="Resource" uid="uid://qoyw6ilf1r0v" path="res://Pawn/PawnResource/Player/SnowMan.tres" id="11_ovi10"]
 [ext_resource type="Resource" uid="uid://v6r8hydabu2a" path="res://Pawn/PawnResource/Player/SnowGlobe.res" id="12_0pbrl"]
 [ext_resource type="Resource" uid="uid://tcwyd7q7s64q" path="res://Pawn/PawnResource/Player/ShotGunKing.tres" id="12_ymswy"]
+[ext_resource type="Resource" uid="uid://bvnu65tl87d6v" path="res://Pawn/PawnResource/Player/PlayerKing.res" id="13_82b03"]
 [ext_resource type="Resource" uid="uid://cuj1b1yaj7t1k" path="res://Pawn/PawnResource/Nutrial/BigStone.res" id="13_bwqks"]
 [ext_resource type="Resource" uid="uid://bhhnv4h7bkp0e" path="res://Pawn/PawnResource/Nutrial/Gold.res" id="14_iera4"]
 [ext_resource type="Resource" uid="uid://dbtib5aptd2re" path="res://Pawn/PawnResource/Nutrial/grass.res" id="15_a83u6"]
@@ -21,9 +26,226 @@
 [ext_resource type="Resource" uid="uid://cvt5tfubya40k" path="res://Pawn/PawnResource/Nutrial/Treasure.res" id="18_a5qnn"]
 [ext_resource type="Resource" uid="uid://ds6042l4qjlkj" path="res://Pawn/PawnResource/Player/Sparrow.tres" id="20_72f6f"]
 [ext_resource type="Resource" uid="uid://bvp4djm887x8c" path="res://Pawn/PawnResource/Player/Seagull.tres" id="21_0mjub"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="21_hufra"]
+[ext_resource type="Resource" uid="uid://cdjq2cpvpb6pi" path="res://Pawn/PawnResource/Player/Totem1.res" id="21_l88ci"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="22_5xihl"]
 [ext_resource type="Resource" uid="uid://ckfbk7ib2vop6" path="res://Pawn/PawnResource/Player/Raven.tres" id="22_25eg2"]
 [ext_resource type="Resource" uid="uid://sxcob71pve4m" path="res://Pawn/PawnResource/Player/TinyKangaroo.tres" id="23_dtyrk"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="23_eilcp"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="24_3c1tg"]
 [ext_resource type="Resource" uid="uid://dq44chtf537bb" path="res://Pawn/PawnResource/Nutrial/Dirt.tres" id="24_p7amu"]
+[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="25_043dk"]
+[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="26_8fak7"]
+
+[sub_resource type="Resource" id="Resource_swogs"]
+script = ExtResource("25_043dk")
+Type = 2
+MoveRange = 5
+HoverColor = Color(0.541176, 0.752941, 1, 1)
+
+[sub_resource type="Resource" id="Resource_u7my0"]
+script = ExtResource("25_043dk")
+Type = 1
+MoveRange = 2
+HoverColor = Color(1, 0.4, 0.513726, 1)
+
+[sub_resource type="Resource" id="Resource_31det"]
+script = ExtResource("26_8fak7")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_5gw14"]
+script = ExtResource("26_8fak7")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 30.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(0.980392, 0.862745, 0.454902, 1)
+TextureBack = "PawnSparrowBack"
+TextureLine = Array[String](["PawnSparrowLine"])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_bbvgd"]
+script = ExtResource("2_63j6t")
+PartsData = Array[ExtResource("26_8fak7")]([SubResource("Resource_31det"), SubResource("Resource_5gw14")])
+Value = 2
+Type = 0
+Flag = 0
+DisPlayName = "Gold Sparrow"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 3
+MaxHP = 4
+InitSheild = 0
+CanJump = false
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("25_043dk")]([SubResource("Resource_swogs"), SubResource("Resource_u7my0")])
+AfterTakeDamage = Array[ExtResource("23_eilcp")]([])
+AfterMove = Array[ExtResource("22_5xihl")]([])
+AfterDeath = Array[ExtResource("21_hufra")]([])
+AfterTurn = Array[ExtResource("24_3c1tg")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false
+
+[sub_resource type="Resource" id="Resource_fapwl"]
+script = ExtResource("25_043dk")
+Type = 1
+MoveRange = 3
+HoverColor = Color(1, 0.4, 0.513726, 1)
+
+[sub_resource type="Resource" id="Resource_3u6kk"]
+script = ExtResource("25_043dk")
+Type = 2
+MoveRange = 3
+HoverColor = Color(0.541176, 0.752941, 1, 1)
+
+[sub_resource type="Resource" id="Resource_vxsby"]
+script = ExtResource("26_8fak7")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_u3828"]
+script = ExtResource("26_8fak7")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 40.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(0.981361, 0.86336, 0.45533, 1)
+TextureBack = "PawnSeagullBack"
+TextureLine = Array[String](["PawnSeagullLine"])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_hcuhh"]
+script = ExtResource("2_63j6t")
+PartsData = Array[ExtResource("26_8fak7")]([SubResource("Resource_vxsby"), SubResource("Resource_u3828")])
+Value = 2
+Type = 0
+Flag = 0
+DisPlayName = "Gold Seagull"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 3
+MaxHP = 4
+InitSheild = 0
+CanJump = false
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("25_043dk")]([SubResource("Resource_fapwl"), SubResource("Resource_3u6kk")])
+AfterTakeDamage = Array[ExtResource("23_eilcp")]([])
+AfterMove = Array[ExtResource("22_5xihl")]([])
+AfterDeath = Array[ExtResource("21_hufra")]([])
+AfterTurn = Array[ExtResource("24_3c1tg")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false
+
+[sub_resource type="Resource" id="Resource_8atf5"]
+script = ExtResource("25_043dk")
+Type = 1
+MoveRange = 5
+HoverColor = Color(1, 0.4, 0.513726, 1)
+
+[sub_resource type="Resource" id="Resource_nvjlv"]
+script = ExtResource("25_043dk")
+Type = 2
+MoveRange = 2
+HoverColor = Color(0.541176, 0.752941, 1, 1)
+
+[sub_resource type="Resource" id="Resource_61g3s"]
+script = ExtResource("26_8fak7")
+Name = ""
+PartType = 4
+GenData = true
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 5.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(1, 1, 1, 1)
+TextureBack = ""
+TextureLine = Array[String]([])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_katol"]
+script = ExtResource("26_8fak7")
+Name = ""
+PartType = 4
+GenData = false
+BottonRadin = 30.0
+TopRadin = 30.0
+CurveRadin = 0.0
+height = 40.0
+pawnColor = Color(0, 0, 0, 1)
+LineColor = Color(0.980392, 0.862745, 0.454902, 1)
+TextureBack = "PawnRavenBack"
+TextureLine = Array[String](["PawnRavenLine"])
+Colors = Array[Color]([])
+
+[sub_resource type="Resource" id="Resource_3e6rr"]
+script = ExtResource("2_63j6t")
+PartsData = Array[ExtResource("26_8fak7")]([SubResource("Resource_61g3s"), SubResource("Resource_katol")])
+Value = 2
+Type = 0
+Flag = 0
+DisPlayName = "Gold Raven"
+HitSound = "Hit"
+DeathSound = "Death"
+MoneyPoint = 10
+AddMoveTimesPawn = 0
+AttackNum = 3
+MaxHP = 4
+InitSheild = 0
+CanJump = false
+CanWalk = true
+CanOffend = false
+CanPush = false
+MoveAbility = Array[ExtResource("25_043dk")]([SubResource("Resource_8atf5"), SubResource("Resource_nvjlv")])
+AfterTakeDamage = Array[ExtResource("23_eilcp")]([])
+AfterMove = Array[ExtResource("22_5xihl")]([])
+AfterDeath = Array[ExtResource("21_hufra")]([])
+AfterTurn = Array[ExtResource("24_3c1tg")]([])
+InitFireTurn = 0
+InitIceTurn = 0
+ImmuneToFire = false
+ImmuneToIce = false
 
 [sub_resource type="Curve" id="Curve_gb5iw"]
 _data = [Vector2(0, 0), 0.0, 0.259382, 0, 0, Vector2(0.499268, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.322196, 0.0, 0, 0]
@@ -31,8 +253,8 @@ point_count = 3
 
 [node name="PawnManager" type="Node"]
 script = ExtResource("1_b272o")
-PlayerPawns = Array[ExtResource("2_63j6t")]([ExtResource("3_ctx36"), ExtResource("4_8owak"), ExtResource("5_iyrao"), ExtResource("6_kwp45"), ExtResource("7_hre0k"), ExtResource("22_25eg2"), ExtResource("12_0pbrl"), ExtResource("11_iu64i"), ExtResource("11_cpgjx"), ExtResource("12_ymswy")])
-PawnsInDic = Array[ExtResource("2_63j6t")]([ExtResource("7_u4uah"), ExtResource("13_bwqks"), ExtResource("14_iera4"), ExtResource("15_a83u6"), ExtResource("16_l2mp6"), ExtResource("17_4miuo"), ExtResource("18_a5qnn"), ExtResource("11_ovi10"), ExtResource("20_72f6f"), ExtResource("21_0mjub"), ExtResource("22_25eg2"), ExtResource("23_dtyrk"), ExtResource("24_p7amu")])
+PlayerPawns = Array[ExtResource("2_63j6t")]([ExtResource("3_ctx36"), ExtResource("4_gjguw"), ExtResource("5_2fch1"), ExtResource("6_r2tg4"), ExtResource("4_8owak"), ExtResource("8_o8ryg"), ExtResource("5_iyrao"), ExtResource("6_kwp45"), ExtResource("7_hre0k"), ExtResource("11_cpgjx"), ExtResource("13_82b03"), ExtResource("22_25eg2"), ExtResource("11_iu64i"), ExtResource("21_0mjub"), ExtResource("12_ymswy"), ExtResource("12_0pbrl"), ExtResource("11_ovi10"), ExtResource("20_72f6f"), ExtResource("21_l88ci")])
+PawnsInDic = Array[ExtResource("2_63j6t")]([ExtResource("7_u4uah"), ExtResource("13_bwqks"), ExtResource("14_iera4"), ExtResource("15_a83u6"), ExtResource("16_l2mp6"), ExtResource("17_4miuo"), ExtResource("18_a5qnn"), ExtResource("11_ovi10"), SubResource("Resource_bbvgd"), SubResource("Resource_hcuhh"), SubResource("Resource_3e6rr"), ExtResource("23_dtyrk"), ExtResource("24_p7amu")])
 DefaultJumpHoverColor = Color(1, 0.40161, 0.513757, 1)
 DefaultMoveHoverColor = Color(1, 0.879344, 0.488505, 1)
 DefaultPushHoverColor = Color(0.729297, 1, 0.471117, 1)

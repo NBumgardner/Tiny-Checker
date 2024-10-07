@@ -43,14 +43,16 @@ func Next(n):
 func _ready() -> void:
 	Show.ShowInst()
 	ABG = QTextBox.new(discribe,Vector2(1200,700),Color(1,1,1,1),Color(0,0,0,1),0)
+	ABG.NoBounce = true
 	ABG.position = Vector2(400,500)
-	ABG.Speed = 2
+	ABG.Speed = 4
+	ABG.PoolNum = 200
 	add_child(ABG)
 	GOT = QTextBox.new("Got It!",Vector2(250,80),Color(1,1,1,1),Color(0,0,0,1),0,true,Callable(self,"Next"),null)
 	GOT.position = Vector2(700,850)
 	add_child(GOT)
 	DialugurDatas.append(QdiaData.new("Hello!\nthanks for comming to play with me!",TextureManager.GetTexture("INT1")))
-	DialugurDatas.append(QdiaData.new("I made a checkers game this time. \nHope you like it!\nJust in case you don't know how to play checkers, \nlet me explain the rules.",TextureManager.GetTexture("INT2")))
+	DialugurDatas.append(QdiaData.new("I made a checkers game this time. \nHope you like it!\nJust in case you don't know how to play, \nlet me explain the rules.",TextureManager.GetTexture("INT2")))
 	DialugurDatas.append(QdiaData.new("It's super easy.\nThere are three types of move.\nMove to neighboring Block\nJumping over a piece\nJumping over multipul pieces in a row",TextureManager.GetTexture("INT3")))
 	DialugurDatas.append(QdiaData.new("That's all, the rest is up to you! \nGood Luck!",TextureManager.GetTexture("INT4")))
 	
@@ -58,4 +60,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if OnDia and Input.is_action_just_pressed("MouseL")and PPP.text!=null:
-		PlayNext()
+		if PPP.text.Text.finish:
+			PlayNext()
+		else:
+			PPP.text.Text.Skip()
+		

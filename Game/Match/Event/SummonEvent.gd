@@ -14,7 +14,7 @@ var ToMatch:Match
 var _containers:Array[MoveContainer] = []
 
 func AddData(p:PawnData,v:Vector2i):
-	SummonPawns.append(p)
+	SummonPawns.append(p.Copy())
 	SummonPositions.append(v)
 
 func _init(toMatch:Match):

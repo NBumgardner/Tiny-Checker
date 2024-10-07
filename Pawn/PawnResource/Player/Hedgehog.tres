@@ -11,8 +11,8 @@
 
 [sub_resource type="Resource" id="Resource_8d30q"]
 script = ExtResource("5_3kvdm")
-Discrabe = "Deal 1 damage to enemy pieces around
-at the end of turn"
+Discrabe = "Deal 1 damage to around enemy
+ pieces at the end of turn"
 
 [sub_resource type="Resource" id="Resource_jaxq3"]
 script = ExtResource("6_j7mci")

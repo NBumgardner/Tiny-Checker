@@ -222,7 +222,7 @@ PlayOncePerFrame = true
 
 [sub_resource type="Resource" id="Resource_cl8eb"]
 script = ExtResource("2_sc16m")
-Volume = 0
+Volume = -7
 Pintch = 1.0
 SoundDri = Array[String](["res://Sound/SoundData/Speak/a.wav", "res://Sound/SoundData/Speak/as.wav", "res://Sound/SoundData/Speak/asasas.wav", "res://Sound/SoundData/Speak/asdasd.wav", "res://Sound/SoundData/Speak/asdasda.wav", "res://Sound/SoundData/Speak/dadsa.wav", "res://Sound/SoundData/Speak/dd.wav", "res://Sound/SoundData/Speak/ds.wav", "res://Sound/SoundData/Speak/dsa.wav", "res://Sound/SoundData/Speak/speak.wav", "res://Sound/SoundData/Speak/speak2.wav", "res://Sound/SoundData/Speak/speak3.wav", "res://Sound/SoundData/Speak/speak4.wav", "res://Sound/SoundData/Speak/speak5.wav", "res://Sound/SoundData/Speak/speak6.wav", "res://Sound/SoundData/Speak/speak7.wav", "res://Sound/SoundData/Speak/speak8.wav", "res://Sound/SoundData/Speak/speak9.wav"])
 PlayOncePerFrame = true

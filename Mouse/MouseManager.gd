@@ -78,6 +78,7 @@ func _ready() -> void:
 	p1.Decay = 1.7
 	p2.Decay = 1.7
 	p3.Decay = 1.7
+	Input.mouse_mode  = Input.MOUSE_MODE_HIDDEN
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	_updateMouse(delta)

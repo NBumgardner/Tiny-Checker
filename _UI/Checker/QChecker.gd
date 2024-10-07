@@ -80,6 +80,7 @@ func _ready() -> void:
 	Textbox.TextSize = 0.4
 	Textbox.Mute = true
 	Textbox.Speed = 3
+	Textbox.PoolNum = 200
 	add_child(Textbox)
 	var tem = QTextBox.new("",Vector2(100,100),Color(1,1,1,1),Color(0,0,0,1))
 	var tt = Pawn.new()
@@ -90,6 +91,7 @@ func _ready() -> void:
 	tem.add_child(tt)
 	tem.position = Vector2(300,-(line*60+40)*0.2+60)
 	OtherTextBoxs.append(tem)
+	tem.PoolNum = 5
 	add_child(tem)
 
 

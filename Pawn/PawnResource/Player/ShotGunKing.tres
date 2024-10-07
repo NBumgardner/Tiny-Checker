@@ -12,7 +12,7 @@
 [sub_resource type="Resource" id="Resource_ub0w1"]
 script = ExtResource("3_xld4x")
 Discrabe = "Deal 2 damage in front
-adter move"
+adter moving"
 
 [sub_resource type="Resource" id="Resource_uyoxy"]
 script = ExtResource("6_n1ylf")

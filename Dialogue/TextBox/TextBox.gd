@@ -50,7 +50,6 @@ func HideAllText():
 func ShowText(c:String,p:Vector2,s:Vector2, d:CharData)->TextCountroler:
 	var tem = GetNextText()
 	if tem!=null:
-		print(c)
 		curFont.SetSprite(tem,c)
 		tem.SetColor(curHead.TextColor)
 		tem.SetPosition(Vector2(p.x+d.rect.size.x/2*s.y,p.y+(d.offset+d.rect.size.x/2)*s.y-curHead.LineOffset))

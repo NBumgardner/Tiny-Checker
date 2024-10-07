@@ -21,6 +21,8 @@ var TextSize:float = 1
 var Mute:bool = false
 var Speed:float  =1
 
+var NoBounce:bool = false
+var PoolNum:int = 30
 
 func _init(s:String,size:Vector2,lineColor:Color,backColor:Color,delay:float = 0,clickable:bool = false, callback:Callable = Callable(),callbackdata= null):
 	Size = size
@@ -87,6 +89,8 @@ func _ready() -> void:
 	Line.width = 3
 	add_child(Polygon)
 	add_child(Line)
+	if NoBounce:
+		lengthB.Cur = 1
 
 func Destory():
 	OnDestory = true
@@ -103,7 +107,7 @@ func _process(delta: float) -> void:
 	if Delay>=0:
 		Delay-=delta
 		if Delay<=0:
-			text = QText.new(S,LineColor,TextSize,false,Mute)
+			text = QText.new(S,LineColor,TextSize,false,Mute,PoolNum)
 			text.tb.Data.DefaultHead.Speed = Speed
 			add_child(text)
 			var line = S.count("\n")

@@ -16,12 +16,13 @@ func SetText(s:String):
 		tb.Play()
 
 
-func _init(s:String,c:Color,size:float,inst:bool = false,mute:bool = true) -> void:
+func _init(s:String,c:Color,size:float,inst:bool = false,mute:bool = true,poolNum:int = 30) -> void:
 	tb = tbPrefab.instantiate()
 	tb.Data.DefaultHead.TextColor = c
 	tb.Data.Text = s
 	tb.Data.DefaultHead.Size  =size
 	tb.Data.DefaultHead.LineDistant*=size
+	tb.TextSpritePoolNum = poolNum
 
 	if mute:
 		tb.Data.DefaultHead.SountSetName = "Mute"

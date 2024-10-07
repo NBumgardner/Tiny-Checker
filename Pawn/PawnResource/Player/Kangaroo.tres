@@ -11,7 +11,8 @@
 
 [sub_resource type="Resource" id="Resource_stcfs"]
 script = ExtResource("2_5sa3w")
-Discrabe = "Gen a tiny kangaroo after destory"
+Discrabe = "Create a tiny kangaroo 
+after destoryed"
 
 [sub_resource type="Resource" id="Resource_r2i2e"]
 script = ExtResource("5_2db1g")

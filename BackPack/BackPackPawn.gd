@@ -99,6 +99,9 @@ func GetMouseInData()->PawnData:
 	
 	
 func SelectData(d:PawnData):
+	if d == null:
+		Unselect()
+		return
 	var tem = Data
 	var ch = 0
 	while tem!=null:
@@ -114,11 +117,12 @@ var mouseDownPosition :Vector2
 
 func CheckClick():
 	if cell == null:
-		var t = GetMouseInData()
-		if t!=null:
-			t=t.Copy()
+		if ShopSelect!=null:
+			var t = ShopSelect.Copy()
 			t.PawnSlot = null
 			CheckerManager.Ckeck(t)
+
+var ShopSelect:PawnData = null
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("MouseL"):
@@ -127,3 +131,10 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_released("MouseL"):
 		if(MouseManager.MousePosition()-mouseDownPosition).length_squared()<25:
 			CheckClick()
+			
+	if cell == null:
+		var t = GetMouseInData()
+		if t!=ShopSelect:
+			ShopSelect = t
+			SelectData(t)
+			

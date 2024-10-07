@@ -10,7 +10,7 @@ func Check(event:MoveEvent,system:MatchEventSystem,form:BoardCell):
 		if dd>=6:
 			dd-=6
 		event.MovePawn.StartWubble(dd)
-		for i in 2:
+		for i in 3:
 			var tc = system.MainBoard.GetCellInDri(event.MovePawn._boardCell.BoardPosition,event.MoveDir,i+1)
 			if tc!=null and tc.GetTop()!=null and tc.GetTop().Flag !=PawnData.PawnFlag.FRIEND:
 				var ttt = DealDamageEvent.new(event.MovePawn,tc.GetTop(),2)

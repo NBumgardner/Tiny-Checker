@@ -39,6 +39,7 @@ var KilledPawnDatas:Array[PawnData]
 
 func InitMatch():
 	HideWinAndLose()
+	EnemyInBoard = []
 	KilledPawnDatas = []
 	MatchScore = 0
 	MatchMoney = 0
@@ -222,7 +223,7 @@ func SelectPawnPossibleMove(p:Pawn):
 					for cell in GameBoard.GetCellInWalkRange(p._boardCell.BoardPosition,mb.MoveRange):
 						if  cell!=null:
 							if cell.PawnSlot!=null:
-								if p.CanPush:
+								if p.CanPush and !cell.CanAddPawn(p):
 									SelectBCell(cell,PawnManager.DefaultPushHoverColor,_canPushCell)
 								if p.CanOffend and cell.PawnSlot.Flag!=PawnData.PawnFlag.FRIEND:
 									SelectBCell(cell,PawnManager.DefaultOffendHoverColor,_canOffendCell)
@@ -321,7 +322,7 @@ func PlayerSelectUpdate():
 	
 func PlayerSelectUp():
 	if (MouseManager.MousePosition()-LastMouseDownPosition).length_squared()<25 and HoverPawn!=null:
-		Checker.Check(HoverPawn.Data)
+		Checker.Check(HoverPawn.Data.Copy())
 	var t = CheckPlayerOperation()
 	DeSelectAll()
 	if t!=null:
@@ -490,6 +491,13 @@ func CheckWin()->int:
 	ScoreCounter.SetL(CurrentLostPoint,LostColor)
 	if CurrentLostPoint>=Data.LosePoint:
 		return -1
+	
+	var noEnemy:bool = true
+	for i in AllPawnInBoard:
+		if i!=null and i.Flag == PawnData.PawnFlag.ENEMY:
+			noEnemy = false
+	if noEnemy:
+		return 1
 	
 	print("Win:"+str(CurrentWinPoint)+"  Lost:"+str(CurrentLostPoint)+"   Left:"+str(totalValue)+"   money:"+str(MatchMoney))
 	return 0

@@ -42,6 +42,8 @@ func RestartGame():
 	GameStart()
 	
 func EndGame():
+	MapShower.Hide()
+	MapShower.Hide()
 	E.InitDia()
 	
 
@@ -54,6 +56,7 @@ func _ready() -> void:
 
 func GameStart():
 	StartMatch(Data.MatchList[0])
+	#StartMapAt(0)
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

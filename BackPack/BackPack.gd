@@ -171,7 +171,7 @@ func RelesePawn():
 	if _takenPawn ==null:
 		return
 	var t = PositionToBoardPosition(MouseManager.MousePosition()-UFN.N2GlobalPosition(self))
-	CheckerManager.Ckeck(_takenPawn.Data)
+	CheckerManager.Ckeck(_takenPawn.Data.Copy())
 	var c = GetSlot(t)
 	if c == null:
 		PutPawnBack()

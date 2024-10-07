@@ -14,6 +14,7 @@ var text:DialogueBubble
 
 var cs:V2BounceCounter
 
+
 func _init(s:Vector2,textSize:float,boxPosition:Vector2,chacterPosition:Vector2,d:QdiaData,delay:float  =0):
 	Size = s
 	BoxPosition = boxPosition

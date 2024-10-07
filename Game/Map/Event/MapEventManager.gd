@@ -18,6 +18,7 @@ func GetEvent(name:String)->MapEvent:
 
 func GetShopItem3()->Array[ShopItemData]:
 	var res:Array[ShopItemData] = []
+	#res.append(ShopGreatItem[5])
 	res.append(UFM.GetRandonItem(ShopGreatItem))
 	res.append(UFM.GetRandonItem(ShopNormalItem))
 	res.append(UFM.GetRandonItem(ShopNormalItem))

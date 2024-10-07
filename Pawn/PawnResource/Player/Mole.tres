@@ -11,8 +11,8 @@
 
 [sub_resource type="Resource" id="Resource_5pco1"]
 script = ExtResource("3_0jcnm")
-Discrabe = "Gen 1  dirt in fornt
-after move"
+Discrabe = "Create 3  dirt in fornt
+after moving"
 
 [sub_resource type="Resource" id="Resource_871hv"]
 script = ExtResource("6_kjpt8")
