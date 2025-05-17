@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="PawnData" load_steps=11 format=3 uid="uid://o38g4evlys3n"]
 
-[ext_resource type="Script" path="res://Pawn/GenPawnPartData.gd" id="1_61g0e"]
-[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_m63ui"]
-[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="2_w6xpa"]
-[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_y8k0a"]
-[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_oignb"]
-[ext_resource type="Script" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_lc8y5"]
-[ext_resource type="Script" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_igk4o"]
+[ext_resource type="Script" uid="uid://cq0av1vsuee1u" path="res://Pawn/GenPawnPartData.gd" id="1_61g0e"]
+[ext_resource type="Script" uid="uid://cc1nybypko6lg" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_m63ui"]
+[ext_resource type="Script" uid="uid://d0l5habc5iuks" path="res://Pawn/PawnData.gd" id="2_w6xpa"]
+[ext_resource type="Script" uid="uid://cqmvru3eco7ah" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_y8k0a"]
+[ext_resource type="Script" uid="uid://bngf8e35yl0q7" path="res://Pawn/PawnAbility/PawnAfterTakeDamageAbility.gd" id="3_oignb"]
+[ext_resource type="Script" uid="uid://cdquylxe8f8on" path="res://Pawn/PawnAbility/AfterTurn/PawnAfterTurnAbility.gd" id="4_lc8y5"]
+[ext_resource type="Script" uid="uid://cy8nwfnhk3f32" path="res://Pawn/PawnAbility/PawnMoveAbility.gd" id="5_igk4o"]
 
 [sub_resource type="Resource" id="Resource_16tu8"]
 script = ExtResource("1_61g0e")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b7k1sfodp113n"]
 
-[ext_resource type="Script" path="res://_UI/RoundShower/Shower.gd" id="2_b5tg1"]
+[ext_resource type="Script" uid="uid://c783211mdrwwh" path="res://_UI/RoundShower/Shower.gd" id="2_b5tg1"]
 
 [node name="Polygon2D" type="Polygon2D"]
 clip_children = 1

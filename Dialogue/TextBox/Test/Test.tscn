@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://bllkh66f8viu3"]
 
-[ext_resource type="Script" path="res://Dialogue/TextBox/TextBox.gd" id="1_dxc6o"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/Test/DialogurTestter.gd" id="1_jbp05"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="2_vdud0"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextData.gd" id="3_arc6g"]
+[ext_resource type="Script" uid="uid://bd1w0xjalnq8g" path="res://Dialogue/TextBox/TextBox.gd" id="1_dxc6o"]
+[ext_resource type="Script" uid="uid://df02u0f0p4uwe" path="res://Dialogue/TextBox/Test/DialogurTestter.gd" id="1_jbp05"]
+[ext_resource type="Script" uid="uid://bqkykkv71f1dy" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="2_vdud0"]
+[ext_resource type="Script" uid="uid://dda4ep2yto3ey" path="res://Dialogue/TextBox/Data/TextData.gd" id="3_arc6g"]
 
 [sub_resource type="Resource" id="Resource_hwva1"]
 script = ExtResource("2_vdud0")

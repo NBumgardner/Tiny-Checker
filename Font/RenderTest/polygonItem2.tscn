@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bag0hwihe8xyi"]
 
-[ext_resource type="Script" path="res://Font/RenderTest/MoveP.gd" id="2_ychka"]
+[ext_resource type="Script" uid="uid://c4ycdwq7qmala" path="res://Font/RenderTest/MoveP.gd" id="2_ychka"]
 
 [node name="PolygonItem" type="Polygon2D"]
 scale = Vector2(0.25, 0.25)

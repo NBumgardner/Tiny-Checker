@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bitqk4eamvk0x"]
 
-[ext_resource type="Script" path="res://Animation/Test/BounceCounterTester.gd" id="1_ctgok"]
+[ext_resource type="Script" uid="uid://fgkwl4wh7co8" path="res://Animation/Test/BounceCounterTester.gd" id="1_ctgok"]
 
 [node name="Test" type="Node2D"]
 

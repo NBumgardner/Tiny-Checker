@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cbw87utxqgvfd"]
 
-[ext_resource type="Script" path="res://Mouse/MouseManager.gd" id="1_rfnev"]
+[ext_resource type="Script" uid="uid://dt3f65ry733sx" path="res://Mouse/MouseManager.gd" id="1_rfnev"]
 
 [node name="MouseManager" type="Node"]
 script = ExtResource("1_rfnev")

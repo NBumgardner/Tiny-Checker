@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dg1tov4aig2f4"]
 
-[ext_resource type="Script" path="res://Dialogue/TextBox/TextBox.gd" id="1_84eti"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="2_xsu81"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextData.gd" id="3_5wnrd"]
+[ext_resource type="Script" uid="uid://bd1w0xjalnq8g" path="res://Dialogue/TextBox/TextBox.gd" id="1_84eti"]
+[ext_resource type="Script" uid="uid://bqkykkv71f1dy" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="2_xsu81"]
+[ext_resource type="Script" uid="uid://dda4ep2yto3ey" path="res://Dialogue/TextBox/Data/TextData.gd" id="3_5wnrd"]
 
 [sub_resource type="Resource" id="Resource_twwvl"]
 resource_local_to_scene = true

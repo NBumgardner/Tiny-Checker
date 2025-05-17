@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3qsxmlainxcn"]
 
 [ext_resource type="Texture2D" uid="uid://bc7l1dtvedtja" path="res://icon.svg" id="1_roq3g"]
-[ext_resource type="Script" path="res://Font/RenderTest/MoveP.gd" id="2_djvcb"]
+[ext_resource type="Script" uid="uid://c4ycdwq7qmala" path="res://Font/RenderTest/MoveP.gd" id="2_djvcb"]
 
 [node name="PolygonItem" type="Polygon2D"]
 scale = Vector2(0.25, 0.25)

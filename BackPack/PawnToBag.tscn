@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://chjowfd3nf5po"]
 
-[ext_resource type="Script" path="res://BackPack/PawnToBag.gd" id="1_6yg77"]
+[ext_resource type="Script" uid="uid://diqeijg5fwce7" path="res://BackPack/PawnToBag.gd" id="1_6yg77"]
 
 [sub_resource type="Curve" id="Curve_2f11w"]
 _data = [Vector2(0, 0), 0.0, 2.34589, 0, 0, Vector2(1, 1), 2.33947, 0.0, 0, 0]

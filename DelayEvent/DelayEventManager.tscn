@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://6fhhm6e872lg"]
 
-[ext_resource type="Script" path="res://DelayEvent/DelayEventManager.gd" id="1_luoly"]
+[ext_resource type="Script" uid="uid://bc4v1wv6o68kb" path="res://DelayEvent/DelayEventManager.gd" id="1_luoly"]
 
 [node name="DelayEventManager" type="Node"]
 script = ExtResource("1_luoly")

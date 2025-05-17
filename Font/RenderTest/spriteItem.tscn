@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dojfc8q3hang8"]
 
 [ext_resource type="Texture2D" uid="uid://bc7l1dtvedtja" path="res://icon.svg" id="1_kjvp5"]
-[ext_resource type="Script" path="res://Font/RenderTest/MoveS.gd" id="2_ym0tb"]
+[ext_resource type="Script" uid="uid://brchv54qyiodj" path="res://Font/RenderTest/MoveS.gd" id="2_ym0tb"]
 
 [node name="SpriteItem" type="Sprite2D"]
 scale = Vector2(0.25, 0.25)

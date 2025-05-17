@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://170awabipg6k"]
 
-[ext_resource type="Script" path="res://_UI/Checker/text.gd" id="1_4uino"]
+[ext_resource type="Script" uid="uid://fiydgkfcs025" path="res://_UI/Checker/text.gd" id="1_4uino"]
 [ext_resource type="Resource" uid="uid://qoyw6ilf1r0v" path="res://Pawn/PawnResource/Player/SnowMan.tres" id="2_nn6k8"]
 
 [node name="Test" type="Node2D"]

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="EnemyGroup" load_steps=6 format=3 uid="uid://c5k3ytfi14hq3"]
 
-[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="1_bioq4"]
-[ext_resource type="Script" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_asema"]
+[ext_resource type="Script" uid="uid://d0l5habc5iuks" path="res://Pawn/PawnData.gd" id="1_bioq4"]
+[ext_resource type="Script" uid="uid://c5mopj0l4xv8s" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_asema"]
 [ext_resource type="Resource" uid="uid://beiygowktrxs" path="res://Pawn/PawnResource/Enemy/FlyKing.res" id="2_h77bs"]
 [ext_resource type="Resource" uid="uid://bteuqfqh4w6qf" path="res://Pawn/PawnResource/Enemy/EnemyKing.res" id="3_olb32"]
 [ext_resource type="Resource" uid="uid://cg8ch4t3bkndp" path="res://Pawn/PawnResource/Enemy/SpinePawn.tres" id="4_v3ii7"]

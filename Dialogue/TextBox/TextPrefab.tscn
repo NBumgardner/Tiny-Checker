@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b1owevw3po156"]
 
-[ext_resource type="Script" path="res://Dialogue/TextBox/TextCountroler.gd" id="2_wukmh"]
+[ext_resource type="Script" uid="uid://isfh1m6fd8jt" path="res://Dialogue/TextBox/TextCountroler.gd" id="2_wukmh"]
 
 [node name="TextPrefab" type="Sprite2D"]
 visible = false

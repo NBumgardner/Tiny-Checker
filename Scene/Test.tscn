@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8805spa1up6c"]
 
-[ext_resource type="Script" path="res://Shape2D/RoundBox/BezierRoundBoxArea.gd" id="1_knsf0"]
-[ext_resource type="Script" path="res://Shape2D/RoundBox/BezierRoundBoxBorder.gd" id="2_enar7"]
+[ext_resource type="Script" uid="uid://7lagqbl6005m" path="res://Shape2D/RoundBox/BezierRoundBoxArea.gd" id="1_knsf0"]
+[ext_resource type="Script" uid="uid://bcxfbpuaflgam" path="res://Shape2D/RoundBox/BezierRoundBoxBorder.gd" id="2_enar7"]
 
 [node name="Node2D" type="Node2D"]
 
