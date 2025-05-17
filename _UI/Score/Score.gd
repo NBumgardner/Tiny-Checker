@@ -14,7 +14,7 @@ func SetNum(n):
 		Num.position = Vector2(-30,-30)
 	else:
 		Num.position = Vector2(-17,-30)
-	Num.SetText(str(n))
+	Num.SetText(str(int(n)))
 
 func SetL(n:int,c:Color):
 	if n>curL:
