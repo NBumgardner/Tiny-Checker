@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://siod4lj5syxi"]
 
-[ext_resource type="Script" path="res://Font/FontTester.gd" id="1_n745e"]
+[ext_resource type="Script" uid="uid://djrd3i7v3r7ei" path="res://Font/FontTester.gd" id="1_n745e"]
 
 [node name="Test" type="Node2D"]
 script = ExtResource("1_n745e")

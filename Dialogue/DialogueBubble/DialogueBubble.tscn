@@ -1,12 +1,12 @@
 [gd_scene load_steps=11 format=3 uid="uid://dsy2ucuqcfhdi"]
 
-[ext_resource type="Script" path="res://Dialogue/DialogueBubble/DialogueBubble.gd" id="1_s3hcf"]
-[ext_resource type="Script" path="res://Shape2D/RoundBox/BezierRoundBoxArea.gd" id="2_pn20b"]
-[ext_resource type="Script" path="res://Shape2D/RoundBox/BezierRoundBoxBorder.gd" id="3_4ke6h"]
-[ext_resource type="Script" path="res://Shape2D/ShapeCopyerArea.gd" id="4_j6s55"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/TextBox.gd" id="5_d1nov"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="6_couqr"]
-[ext_resource type="Script" path="res://Dialogue/TextBox/Data/TextData.gd" id="7_jrsgu"]
+[ext_resource type="Script" uid="uid://bfbvvorurs1u0" path="res://Dialogue/DialogueBubble/DialogueBubble.gd" id="1_s3hcf"]
+[ext_resource type="Script" uid="uid://7lagqbl6005m" path="res://Shape2D/RoundBox/BezierRoundBoxArea.gd" id="2_pn20b"]
+[ext_resource type="Script" uid="uid://bcxfbpuaflgam" path="res://Shape2D/RoundBox/BezierRoundBoxBorder.gd" id="3_4ke6h"]
+[ext_resource type="Script" uid="uid://bjxt2m4cvxbrm" path="res://Shape2D/ShapeCopyerArea.gd" id="4_j6s55"]
+[ext_resource type="Script" uid="uid://bd1w0xjalnq8g" path="res://Dialogue/TextBox/TextBox.gd" id="5_d1nov"]
+[ext_resource type="Script" uid="uid://bqkykkv71f1dy" path="res://Dialogue/TextBox/Data/TextHeader.gd" id="6_couqr"]
+[ext_resource type="Script" uid="uid://dda4ep2yto3ey" path="res://Dialogue/TextBox/Data/TextData.gd" id="7_jrsgu"]
 
 [sub_resource type="Resource" id="Resource_a048l"]
 resource_local_to_scene = true

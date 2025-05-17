@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="EnemyGroup" load_steps=7 format=3 uid="uid://cyuq088p1dpmh"]
 
-[ext_resource type="Script" path="res://Pawn/PawnData.gd" id="1_eq5p3"]
+[ext_resource type="Script" uid="uid://d0l5habc5iuks" path="res://Pawn/PawnData.gd" id="1_eq5p3"]
 [ext_resource type="Resource" uid="uid://jx27i3hy1jmw" path="res://Pawn/PawnResource/Enemy/SpineKing.res" id="2_8ihy8"]
-[ext_resource type="Script" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_t8cy3"]
+[ext_resource type="Script" uid="uid://c5mopj0l4xv8s" path="res://Game/Match/Enemy/EnemyGroup.gd" id="2_t8cy3"]
 [ext_resource type="Resource" uid="uid://cg8ch4t3bkndp" path="res://Pawn/PawnResource/Enemy/SpinePawn.tres" id="3_a0307"]
 [ext_resource type="Resource" uid="uid://oth88j0wwcwq" path="res://Pawn/PawnResource/Enemy/FlyBomber.res" id="4_3jujc"]
 [ext_resource type="Resource" uid="uid://b8e73ehmogdn6" path="res://Pawn/PawnResource/Enemy/SpineCandle.res" id="5_u1383"]

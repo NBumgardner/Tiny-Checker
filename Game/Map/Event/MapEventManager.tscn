@@ -1,7 +1,7 @@
 [gd_scene load_steps=39 format=3 uid="uid://jxa8t35bvuwt"]
 
-[ext_resource type="Script" path="res://Game/Map/Event/MapEventManager.gd" id="1_mp2rx"]
-[ext_resource type="Script" path="res://Game/Map/Event/Shop/ShopItemData.gd" id="2_uej1m"]
+[ext_resource type="Script" uid="uid://dntnojhu3712s" path="res://Game/Map/Event/MapEventManager.gd" id="1_mp2rx"]
+[ext_resource type="Script" uid="uid://d38r1slig0mvv" path="res://Game/Map/Event/Shop/ShopItemData.gd" id="2_uej1m"]
 [ext_resource type="Resource" uid="uid://deba62tyvhgdv" path="res://Pawn/PawnResource/Player/Bomber.res" id="3_sdbuf"]
 [ext_resource type="Resource" uid="uid://cd7m2775ff8o6" path="res://Pawn/PawnResource/Player/Beaver.res" id="4_0sbvf"]
 [ext_resource type="Resource" uid="uid://bvnu65tl87d6v" path="res://Pawn/PawnResource/Player/PlayerKing.res" id="4_j1vjp"]

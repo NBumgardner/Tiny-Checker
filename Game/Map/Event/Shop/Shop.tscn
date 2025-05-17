@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ckegh7og5iye7"]
 
-[ext_resource type="Script" path="res://Game/Map/Event/Shop/ShopEvent.gd" id="1_2at5h"]
+[ext_resource type="Script" uid="uid://gshslil28nma" path="res://Game/Map/Event/Shop/ShopEvent.gd" id="1_2at5h"]
 [ext_resource type="Texture2D" uid="uid://cihshivlxerha" path="res://Texture/Data/Shop/Icon.png" id="2_vw4vl"]
 [ext_resource type="Texture2D" uid="uid://bsyrcmq0lqk52" path="res://Texture/Data/Shop/Back.png" id="3_m3863"]
 [ext_resource type="Texture2D" uid="uid://diyktt0ihgbdf" path="res://Texture/Data/Shop/Frame.png" id="4_aauia"]

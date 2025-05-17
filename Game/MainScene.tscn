@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://ceya17p0pscsw"]
 
 [ext_resource type="PackedScene" uid="uid://bxm80dnq67htt" path="res://Game/Match/MatchScene.tscn" id="1_pmppj"]
-[ext_resource type="Script" path="res://Game/Game.gd" id="1_sdluo"]
+[ext_resource type="Script" uid="uid://bwyw6hgxmd4dm" path="res://Game/Game.gd" id="1_sdluo"]
 [ext_resource type="Resource" uid="uid://cwep7vq0dxjtu" path="res://Game/GameData.res" id="2_tg04x"]
 [ext_resource type="PackedScene" uid="uid://b7k1sfodp113n" path="res://_UI/RoundShower/RoundShower.tscn" id="3_8o4rr"]
 [ext_resource type="PackedScene" uid="uid://bed6kg3s3rda4" path="res://Game/Map/Map.tscn" id="4_gbt7i"]
-[ext_resource type="Script" path="res://_UI/Initer.gd" id="4_xgx8n"]
-[ext_resource type="Script" path="res://_UI/End.gd" id="7_yi4kn"]
+[ext_resource type="Script" uid="uid://6hg5kj4ct1sl" path="res://_UI/Initer.gd" id="4_xgx8n"]
+[ext_resource type="Script" uid="uid://c3ffl7jah5r80" path="res://_UI/End.gd" id="7_yi4kn"]
 
 [node name="MainScene" type="Node2D" node_paths=PackedStringArray("MainMatch", "MainMap", "MatchShower", "MapShower", "E")]
 script = ExtResource("1_sdluo")

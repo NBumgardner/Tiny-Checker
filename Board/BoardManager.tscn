@@ -1,9 +1,9 @@
 [gd_scene load_steps=104 format=3 uid="uid://c4e4dwaajohjp"]
 
-[ext_resource type="Script" path="res://Board/BoardManager.gd" id="1_kmdjb"]
-[ext_resource type="Script" path="res://Board/BoardData.gd" id="2_7ox55"]
-[ext_resource type="Script" path="res://Board/BoardBlockData.gd" id="2_osaxw"]
-[ext_resource type="Script" path="res://Board/BoardLineData.gd" id="3_u243n"]
+[ext_resource type="Script" uid="uid://crorvrfe0y5wh" path="res://Board/BoardManager.gd" id="1_kmdjb"]
+[ext_resource type="Script" uid="uid://cn86xi8h8ss7n" path="res://Board/BoardData.gd" id="2_7ox55"]
+[ext_resource type="Script" uid="uid://b58hhc5dd13it" path="res://Board/BoardBlockData.gd" id="2_osaxw"]
+[ext_resource type="Script" uid="uid://cyufj4k5fvohf" path="res://Board/BoardLineData.gd" id="3_u243n"]
 
 [sub_resource type="Resource" id="Resource_42ao6"]
 script = ExtResource("3_u243n")

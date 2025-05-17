@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://it8coe1fmp8q"]
 
-[ext_resource type="Script" path="res://Font/RenderTest/RenderTest.gd" id="1_funh8"]
+[ext_resource type="Script" uid="uid://dc65rmnvnc8ba" path="res://Font/RenderTest/RenderTest.gd" id="1_funh8"]
 
 [node name="RenderText" type="Node2D"]
 script = ExtResource("1_funh8")

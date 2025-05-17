@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dtdvb5auooinb"]
 
-[ext_resource type="Script" path="res://Dialogue/QText/test.gd" id="1_l1yum"]
+[ext_resource type="Script" uid="uid://cwy3t4o855n74" path="res://Dialogue/QText/test.gd" id="1_l1yum"]
 
 [node name="Test" type="Node2D"]
 script = ExtResource("1_l1yum")

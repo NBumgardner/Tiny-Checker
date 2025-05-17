@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://b03u0ld3cecwb"]
 
-[ext_resource type="Script" path="res://Game/Map/Event/Shop/ShopItem.gd" id="1_e8fxw"]
+[ext_resource type="Script" uid="uid://ccq3ba2vjjcrc" path="res://Game/Map/Event/Shop/ShopItem.gd" id="1_e8fxw"]
 [ext_resource type="Resource" uid="uid://c0admrjwwrc5y" path="res://Pawn/PawnResource/Player/PlayerPawn.res" id="2_c6g5c"]
 [ext_resource type="Texture2D" uid="uid://c7forshqm4s2r" path="res://Texture/Data/Shop/Slot.png" id="2_cchdo"]
-[ext_resource type="Script" path="res://Game/Map/Event/Shop/ShopItemData.gd" id="3_513mg"]
+[ext_resource type="Script" uid="uid://d38r1slig0mvv" path="res://Game/Map/Event/Shop/ShopItemData.gd" id="3_513mg"]
 [ext_resource type="Texture2D" uid="uid://ccamvtu14umvx" path="res://Texture/Data/Shop/Sold.png" id="3_sq7oj"]
 
 [sub_resource type="Resource" id="Resource_rlqm3"]

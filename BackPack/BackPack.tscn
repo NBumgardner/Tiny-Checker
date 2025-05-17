@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cm7884emwnp6s"]
 
-[ext_resource type="Script" path="res://BackPack/BackPack.gd" id="1_eipfg"]
+[ext_resource type="Script" uid="uid://c2shc04lfs3au" path="res://BackPack/BackPack.gd" id="1_eipfg"]
 [ext_resource type="Texture2D" uid="uid://dkg0qrag33f4b" path="res://Texture/Data/Bag/Body.png" id="2_47dwe"]
 [ext_resource type="Texture2D" uid="uid://dltfxkg4wmqg6" path="res://Texture/Data/Bag/CC.png" id="3_f5n35"]
 [ext_resource type="Texture2D" uid="uid://c7w8h7yjh6gum" path="res://Texture/Data/Bag/Cover.png" id="3_u077w"]

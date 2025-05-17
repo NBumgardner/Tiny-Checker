@@ -1,14 +1,14 @@
 [gd_scene load_steps=12 format=3 uid="uid://bed6kg3s3rda4"]
 
-[ext_resource type="Script" path="res://Game/Map/Map.gd" id="1_y2dax"]
+[ext_resource type="Script" uid="uid://56kjh2opsqya" path="res://Game/Map/Map.gd" id="1_y2dax"]
 [ext_resource type="PackedScene" uid="uid://cm7884emwnp6s" path="res://BackPack/BackPack.tscn" id="2_kee05"]
-[ext_resource type="Script" path="res://Game/Map/MapData.gd" id="2_s43di"]
+[ext_resource type="Script" uid="uid://okfleu2cjbm1" path="res://Game/Map/MapData.gd" id="2_s43di"]
 [ext_resource type="Texture2D" uid="uid://dx3qobdvmgws0" path="res://Texture/Data/Fight/Icon.png" id="3_0jxey"]
 [ext_resource type="Texture2D" uid="uid://dw55566b0jfvs" path="res://Texture/Data/BackGround/2.png" id="4_gslmy"]
 [ext_resource type="PackedScene" uid="uid://6ae1khq6c4r7" path="res://Game/Map/Money.tscn" id="4_ir1w1"]
 [ext_resource type="Texture2D" uid="uid://ccsylmqiso3l8" path="res://Texture/Data/BackGround/4.png" id="5_n7tgs"]
 [ext_resource type="Texture2D" uid="uid://coec1nixlo7s7" path="res://Texture/Data/BackGround/3.png" id="6_837s7"]
-[ext_resource type="Script" path="res://_UI/Checker/CheckerContainer.gd" id="6_r4sxl"]
+[ext_resource type="Script" uid="uid://chdchv0imytx8" path="res://_UI/Checker/CheckerContainer.gd" id="6_r4sxl"]
 
 [sub_resource type="Resource" id="Resource_cuty0"]
 script = ExtResource("2_s43di")

@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://bxm80dnq67htt"]
 
-[ext_resource type="Script" path="res://Game/Match/Match.gd" id="1_d20x8"]
+[ext_resource type="Script" uid="uid://cdpr1jjcdg1e3" path="res://Game/Match/Match.gd" id="1_d20x8"]
 [ext_resource type="Texture2D" uid="uid://bkhfbflnbo7vi" path="res://Texture/Data/BackGround/1.png" id="2_fke6r"]
 [ext_resource type="PackedScene" uid="uid://dgxp17pvwt08s" path="res://_UI/Counter/Counter.tscn" id="2_qk256"]
 [ext_resource type="PackedScene" uid="uid://bqdbmcla8jjfr" path="res://_UI/Score/Score.tscn" id="3_ksy4s"]
 [ext_resource type="Texture2D" uid="uid://ckjyvihi0vw4c" path="res://Texture/Data/Match/Win.png" id="4_hw3a1"]
 [ext_resource type="Texture2D" uid="uid://ertujxpcmqh0" path="res://Texture/Data/Match/Lose.png" id="5_d7ko8"]
-[ext_resource type="Script" path="res://_UI/Checker/CheckerContainer.gd" id="6_0fmam"]
+[ext_resource type="Script" uid="uid://chdchv0imytx8" path="res://_UI/Checker/CheckerContainer.gd" id="6_0fmam"]
 
 [node name="MatchScene" type="Node2D" node_paths=PackedStringArray("ScoreCounter", "TurnCounter", "Checker", "WinSprite", "LoseSprite")]
 script = ExtResource("1_d20x8")

@@ -1,15 +1,15 @@
 [gd_scene load_steps=25 format=3 uid="uid://buu26snoqiuhv"]
 
-[ext_resource type="Script" path="res://PropertyControler/PropertyControler.gd" id="1_am67a"]
-[ext_resource type="Script" path="res://PropertyControler/SetterNode/SetterNode.gd" id="2_0odl3"]
-[ext_resource type="Script" path="res://PropertyControler/InnerNode/InnerNode.gd" id="2_3s020"]
-[ext_resource type="Script" path="res://PropertyControler/GetterNode/GetterNode.gd" id="2_wtskr"]
-[ext_resource type="Script" path="res://PropertyControler/SetterNode/N2dPositionSetterNode.gd" id="3_22yk5"]
-[ext_resource type="Script" path="res://PropertyControler/InnerNode/Wire/V2Wire.gd" id="3_c1csn"]
-[ext_resource type="Script" path="res://PropertyControler/GetterNode/V2GetterNode.gd" id="6_tgeip"]
-[ext_resource type="Script" path="res://PropertyControler/InnerNode/Wire/BoolWire.gd" id="7_b4saf"]
-[ext_resource type="Script" path="res://PropertyControler/InnerNode/V2BounceNode.gd" id="7_f3dsd"]
-[ext_resource type="Script" path="res://PropertyControler/SetterNode/N2dScaleSetterNode.gd" id="9_qswqm"]
+[ext_resource type="Script" uid="uid://cuj0ckl0rf2yx" path="res://PropertyControler/PropertyControler.gd" id="1_am67a"]
+[ext_resource type="Script" uid="uid://c41uxtok2osg" path="res://PropertyControler/SetterNode/SetterNode.gd" id="2_0odl3"]
+[ext_resource type="Script" uid="uid://co5igms3ov4sx" path="res://PropertyControler/InnerNode/InnerNode.gd" id="2_3s020"]
+[ext_resource type="Script" uid="uid://b5ni7srb7070g" path="res://PropertyControler/GetterNode/GetterNode.gd" id="2_wtskr"]
+[ext_resource type="Script" uid="uid://587jtr3lxxmc" path="res://PropertyControler/SetterNode/N2dPositionSetterNode.gd" id="3_22yk5"]
+[ext_resource type="Script" uid="uid://cojo5v2m8juai" path="res://PropertyControler/InnerNode/Wire/V2Wire.gd" id="3_c1csn"]
+[ext_resource type="Script" uid="uid://bn7p2wkyvrf7g" path="res://PropertyControler/GetterNode/V2GetterNode.gd" id="6_tgeip"]
+[ext_resource type="Script" uid="uid://d1b50jc5o43ex" path="res://PropertyControler/InnerNode/Wire/BoolWire.gd" id="7_b4saf"]
+[ext_resource type="Script" uid="uid://b8xxybm2mh0el" path="res://PropertyControler/InnerNode/V2BounceNode.gd" id="7_f3dsd"]
+[ext_resource type="Script" uid="uid://b7ygfwsu1bdhc" path="res://PropertyControler/SetterNode/N2dScaleSetterNode.gd" id="9_qswqm"]
 
 [sub_resource type="Resource" id="Resource_cvhv7"]
 script = ExtResource("3_c1csn")
@@ -53,6 +53,7 @@ End = SubResource("Resource_cvhv7")
 Cur = SubResource("Resource_fhr2j")
 Vocility = SubResource("Resource_k17nx")
 Start = SubResource("Resource_d1i65")
+Frequnce = 1.0
 Speed = 1.0
 Decay = 1.0
 BounceRange = -1.0
@@ -81,6 +82,7 @@ End = SubResource("Resource_kewpq")
 Cur = SubResource("Resource_yuf64")
 Vocility = SubResource("Resource_io7fv")
 Start = SubResource("Resource_cvowi")
+Frequnce = 1.0
 Speed = 0.5
 Decay = 1.0
 BounceRange = -1.0

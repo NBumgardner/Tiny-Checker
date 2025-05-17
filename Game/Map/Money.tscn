@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6ae1khq6c4r7"]
 
-[ext_resource type="Script" path="res://Game/Map/Money.gd" id="1_n58y5"]
+[ext_resource type="Script" uid="uid://0d5vboph57hw" path="res://Game/Map/Money.gd" id="1_n58y5"]
 [ext_resource type="Texture2D" uid="uid://dpdbgkrs8vsny" path="res://Texture/Data/Coin/B.png" id="2_0ihg1"]
 
 [node name="Money" type="Node2D" node_paths=PackedStringArray("Layer")]
