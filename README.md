@@ -30,7 +30,11 @@ Between battles and shops, the camera pans to the right to focus on the next cli
 
 ## Differences from Original
 
-As of May 2025, the only change was to upgrade to the latest Godot engine version 4.4.
+The original game jam version was finished in Oct. 2024. Changes to the original include:
+
+- Upgrade to the latest Godot engine version 4.7.
+- Maintain original behavior:
+  - Fix floating point score to round down to an integer.
 
 ### Enhancements Made
 
