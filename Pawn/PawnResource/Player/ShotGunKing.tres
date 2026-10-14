@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PawnData" load_steps=12 format=3 uid="uid://tcwyd7q7s64q"]
+[gd_resource type="Resource" script_class="PawnData" format=3 uid="uid://tcwyd7q7s64q"]
 
 [ext_resource type="Script" uid="uid://cc1nybypko6lg" path="res://Pawn/PawnAbility/AfterDeath/PawnAfterDeathAbility.gd" id="1_kh8xb"]
 [ext_resource type="Script" uid="uid://cqmvru3eco7ah" path="res://Pawn/PawnAbility/AfterMove/PawnAfterMoveAbility.gd" id="2_hve2i"]
@@ -16,58 +16,18 @@ adter moving"
 
 [sub_resource type="Resource" id="Resource_uyoxy"]
 script = ExtResource("6_n1ylf")
-Name = ""
-PartType = 4
-GenData = true
-BottonRadin = 30.0
-TopRadin = 30.0
-CurveRadin = 0.0
-height = 5.0
-pawnColor = Color(0, 0, 0, 1)
-LineColor = Color(1, 1, 1, 1)
-TextureBack = ""
-TextureLine = Array[String]([])
-Colors = Array[Color]([])
 
 [sub_resource type="Resource" id="Resource_mf1vq"]
 script = ExtResource("6_n1ylf")
-Name = ""
-PartType = 4
 GenData = false
-BottonRadin = 30.0
-TopRadin = 30.0
-CurveRadin = 0.0
 height = 40.0
-pawnColor = Color(0, 0, 0, 1)
-LineColor = Color(1, 1, 1, 1)
 TextureBack = "PawnShotGunKingBack"
 TextureLine = Array[String](["PawnShotGunKingLine"])
-Colors = Array[Color]([])
 
 [resource]
 script = ExtResource("7_tw2vm")
 PartsData = Array[ExtResource("6_n1ylf")]([SubResource("Resource_uyoxy"), SubResource("Resource_mf1vq")])
-Value = 1
-Type = 0
-Flag = 0
 DisPlayName = "ShotGun King"
-HitSound = "Hit"
-DeathSound = "Death"
-MoneyPoint = 10
-AddMoveTimesPawn = 0
 AttackNum = 3
 MaxHP = 8
-InitSheild = 0
-CanJump = true
-CanWalk = true
-CanOffend = false
-CanPush = false
-MoveAbility = Array[ExtResource("5_ghksa")]([])
-AfterTakeDamage = Array[ExtResource("3_15qnd")]([])
 AfterMove = Array[ExtResource("2_hve2i")]([SubResource("Resource_ub0w1")])
-AfterDeath = Array[ExtResource("1_kh8xb")]([])
-AfterTurn = Array[ExtResource("4_r8e17")]([])
-InitFireTurn = 0
-InitIceTurn = 0
-ImmuneToFire = false
-ImmuneToIce = false
